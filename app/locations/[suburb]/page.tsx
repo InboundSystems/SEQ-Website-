@@ -163,7 +163,7 @@ export default async function SuburbPage({
             <p className="text-sm leading-relaxed" style={{ color: '#1A1A1A' }}>
               From new garden bed installation to complete outdoor transformations,{' '}
               <Link href="/services/landscaping-brisbane" style={{ color: '#2D5A3D' }} className="underline">
-                SEQ Landscaping
+                SEQ Landscaping and Garden Maintenance
               </Link>{' '}
               delivers custom landscaping solutions for {suburb.name} properties. Contact Sam to discuss your project.
             </p>
@@ -177,7 +177,7 @@ export default async function SuburbPage({
               className="text-2xl font-bold mb-6"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              Why {suburb.name} Homeowners Choose SEQ Landscaping
+              Why {suburb.name} Homeowners Choose SEQ Landscaping and Garden Maintenance
             </h2>
             <ul className="space-y-3">
               {[

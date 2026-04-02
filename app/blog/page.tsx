@@ -5,7 +5,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { FadeIn } from '@/components/home/AnimatedSection';
 
 export const metadata: Metadata = {
-  title: 'Landscaping & Garden Tips Blog — Brisbane | SEQ Landscaping',
+  title: 'Landscaping & Garden Tips Blog — Brisbane | SEQ Landscaping and Garden Maintenance',
   description:
     'Garden tips, lawn care advice, and landscaping guides for Brisbane homeowners. Expert advice from SEQ Landscaping & Garden Maintenance — Brisbane Southside.',
 };
@@ -46,7 +46,7 @@ export default function BlogIndexPage() {
             Garden &amp; Landscaping Tips for Brisbane Homeowners
           </h1>
           <p className="text-lg" style={{ color: '#E8C99A' }}>
-            Expert lawn care and garden advice from the SEQ Landscaping team.
+            Expert lawn care and garden advice from the SEQ Landscaping and Garden Maintenance team.
           </p>
         </div>
       </section>

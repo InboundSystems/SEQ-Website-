@@ -183,7 +183,7 @@ export function ServicePageLayout({
               {/* Back to homepage */}
               <div className="text-sm">
                 <Link href="/" className="hover:underline font-medium" style={{ color: '#2D5A3D' }}>
-                  ← SEQ Landscaping Brisbane
+                  ← SEQ Landscaping and Garden Maintenance Brisbane
                 </Link>
               </div>
             </div>

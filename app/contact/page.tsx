@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 import { ContactForm } from '@/components/contact/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact SEQ Landscaping — Free Quotes Brisbane',
+  title: 'Contact SEQ Landscaping and Garden Maintenance — Free Quotes Brisbane',
   description:
     'Contact SEQ Landscaping & Garden Maintenance for a free quote. Call Sam on 0490 770 382 or send an enquiry. Based in Tarragindi, serving all of Brisbane Southside.',
 };
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="SEQ Landscaping — 48 Downes St, Tarragindi QLD 4105"
+                  title="SEQ Landscaping and Garden Maintenance — 48 Downes St, Tarragindi QLD 4105"
                 />
               </div>
               <div style={{ backgroundColor: '#F5F0E8' }} className="py-6 px-6 rounded-2xl">

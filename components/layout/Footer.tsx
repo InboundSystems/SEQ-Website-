@@ -36,7 +36,7 @@ export function Footer() {
               className="text-2xl font-bold text-white"
               style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              SEQ Landscaping
+              SEQ Landscaping and Garden Maintenance
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: '#E8C99A' }}>
               Brisbane Southside&apos;s trusted landscaping &amp; garden maintenance specialists.

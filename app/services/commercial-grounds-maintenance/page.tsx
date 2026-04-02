@@ -104,7 +104,7 @@ export default function CommercialGroundsMaintenancePage() {
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Consistency You Can Count On</h2>
             <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>
-              Commercial grounds maintenance is different from residential work — your tenants, clients, and visitors see your grounds every day. That means reliability matters as much as quality. At SEQ Landscaping, we show up on schedule, communicate proactively about any changes, and treat your commercial property with the same care we&apos;d give our own. We&apos;re fully insured, and we&apos;ll provide the documentation your body corporate or property manager requires. Our clients include strata complexes, childcare facilities, medical centres, and retail strips across Brisbane Southside.
+              Commercial grounds maintenance is different from residential work — your tenants, clients, and visitors see your grounds every day. That means reliability matters as much as quality. At SEQ Landscaping and Garden Maintenance, we show up on schedule, communicate proactively about any changes, and treat your commercial property with the same care we&apos;d give our own. We&apos;re fully insured, and we&apos;ll provide the documentation your body corporate or property manager requires. Our clients include strata complexes, childcare facilities, medical centres, and retail strips across Brisbane Southside.
             </p>
           </FadeIn>
         </section>
@@ -127,7 +127,7 @@ export default function CommercialGroundsMaintenancePage() {
         </section>
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
           <FadeIn>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Why Brisbane Businesses Choose SEQ Landscaping</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Why Brisbane Businesses Choose SEQ Landscaping and Garden Maintenance</h2>
             <ul className="space-y-3">
               {reasons.map((r) => (
                 <li key={r} className="flex items-start gap-3">

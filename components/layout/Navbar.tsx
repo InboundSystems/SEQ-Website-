@@ -51,7 +51,7 @@ export function Navbar() {
                 animate={{ color: scrolled ? '#1C3A2A' : '#ffffff' }}
                 transition={{ duration: 0.3 }}
               >
-                SEQ Landscaping
+                SEQ Landscaping and Garden Maintenance
               </motion.span>
             </Link>
 

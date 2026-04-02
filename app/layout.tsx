@@ -16,8 +16,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping",
-    template: "%s | SEQ Landscaping",
+    default: "Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping and Garden Maintenance",
+    template: "%s | SEQ Landscaping and Garden Maintenance",
   },
   description:
     "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka & all South Brisbane suburbs. Free quotes — call Sam on 0490 770 382.",

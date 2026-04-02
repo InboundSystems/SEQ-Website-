@@ -89,7 +89,7 @@ export function ContactForm() {
       onSubmit={handleSubmit}
       className="space-y-5"
     >
-      <input type="hidden" name="_subject" value="New Quote Request — SEQ Landscaping" />
+      <input type="hidden" name="_subject" value="New Quote Request — SEQ Landscaping and Garden Maintenance" />
       <input type="hidden" name="_next" value="https://seqlandscaping.com.au/thank-you" />
 
       <h2

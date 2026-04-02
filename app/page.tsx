@@ -25,7 +25,7 @@ import { HeroSection } from '@/components/home/HeroSection';
 import { FadeIn, ScaleIn } from '@/components/home/AnimatedSection';
 
 export const metadata: Metadata = {
-  title: 'Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping',
+  title: 'Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping and Garden Maintenance',
   description:
     "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka, Fairfield, Salisbury & all South Brisbane suburbs. Free quotes — call Sam on 0490 770 382.",
 };
@@ -125,7 +125,7 @@ const suburbs = [
 
 const testimonials = [
   {
-    text: 'Sam and the team transformed our backyard in Greenslopes. Professional, on time, and the results speak for themselves. Will absolutely be using SEQ Landscaping for ongoing maintenance.',
+    text: 'Sam and the team transformed our backyard in Greenslopes. Professional, on time, and the results speak for themselves. Will absolutely be using SEQ Landscaping and Garden Maintenance for ongoing maintenance.',
     author: 'Michael T.',
     suburb: 'Greenslopes',
   },
@@ -234,7 +234,7 @@ export default function HomePage() {
                     className="text-3xl sm:text-4xl font-bold text-white leading-tight"
                     style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
                   >
-                    Why Brisbane Homeowners Choose SEQ Landscaping
+                    Why Brisbane Homeowners Choose SEQ Landscaping and Garden Maintenance
                   </h2>
                 </div>
               </FadeIn>
@@ -377,7 +377,7 @@ export default function HomePage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="SEQ Landscaping location — 48 Downes St, Tarragindi QLD 4105"
+                  title="SEQ Landscaping and Garden Maintenance location — 48 Downes St, Tarragindi QLD 4105"
                 />
               </div>
 

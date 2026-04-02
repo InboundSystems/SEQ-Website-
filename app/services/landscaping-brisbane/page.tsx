@@ -66,7 +66,7 @@ const faqs = [
   {
     question: 'Do you offer landscaping design as well as installation?',
     answer:
-      "Yes — SEQ Landscaping offers both design and installation. Sam will discuss your vision, assess your space, and recommend a design that suits your budget and Brisbane's climate. We handle everything from concept to completion.",
+      "Yes — SEQ Landscaping and Garden Maintenance offers both design and installation. Sam will discuss your vision, assess your space, and recommend a design that suits your budget and Brisbane's climate. We handle everything from concept to completion.",
   },
   {
     question: 'Do you landscape commercial properties in Brisbane?',
@@ -183,7 +183,7 @@ export default function LandscapingPage() {
               className="text-2xl sm:text-3xl font-bold mb-6"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              Why Brisbane Homeowners Choose SEQ Landscaping
+              Why Brisbane Homeowners Choose SEQ Landscaping and Garden Maintenance
             </h2>
             <ul className="space-y-3">
               {reasons.map((r) => (

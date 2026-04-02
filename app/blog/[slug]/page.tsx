@@ -108,7 +108,7 @@ export default async function BlogPostPage({
             </ol>
           </nav>
           <div className="flex items-center gap-3 mb-5">
-            <span className="text-sm" style={{ color: '#E8C99A' }}>By Sam — SEQ Landscaping</span>
+            <span className="text-sm" style={{ color: '#E8C99A' }}>By Sam — SEQ Landscaping and Garden Maintenance</span>
             <span style={{ color: '#4A8C5C' }}>·</span>
             <span className="text-sm" style={{ color: '#E8C99A' }}>{post.date}</span>
             <span style={{ color: '#4A8C5C' }}>·</span>

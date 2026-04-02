@@ -66,7 +66,7 @@ const faqs = [
   {
     question: 'What does a garden maintenance visit include?',
     answer:
-      'A standard garden maintenance visit from SEQ Landscaping includes weeding garden beds, pruning overgrown shrubs, edging lawn borders, removing garden debris, and a general tidy. We tailor each visit to your garden\'s specific needs — let us know what matters most to you.',
+      'A standard garden maintenance visit from SEQ Landscaping and Garden Maintenance includes weeding garden beds, pruning overgrown shrubs, edging lawn borders, removing garden debris, and a general tidy. We tailor each visit to your garden\'s specific needs — let us know what matters most to you.',
   },
   {
     question: 'Do you offer ongoing garden maintenance contracts in Brisbane?',
@@ -176,7 +176,7 @@ export default function GardenMaintenancePage() {
               className="text-2xl sm:text-3xl font-bold mb-6"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              Why Brisbane Homeowners Choose SEQ Landscaping for Garden Maintenance
+              Why Brisbane Homeowners Choose SEQ Landscaping and Garden Maintenance for Garden Maintenance
             </h2>
             <ul className="space-y-3">
               {reasons.map((r) => (

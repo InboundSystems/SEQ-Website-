@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-often-mow-lawn-brisbane',
     title: 'How Often Should You Mow Your Lawn in Brisbane?',
     metaDescription:
-      "How often should Brisbane homeowners mow their lawn? SEQ Landscaping's expert guide to lawn mowing frequency for Brisbane's subtropical climate — by season and grass type.",
+      "How often should Brisbane homeowners mow their lawn? SEQ Landscaping and Garden Maintenance's expert guide to lawn mowing frequency for Brisbane's subtropical climate — by season and grass type.",
     excerpt:
       "Brisbane's subtropical climate means your lawn grows aggressively in summer and slows in winter. Here's our complete guide to mowing frequency by season and grass type.",
     date: 'March 2026',
@@ -105,7 +105,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'garden-maintenance-vs-landscaping-brisbane',
     title: 'Garden Maintenance vs. Full Landscaping: What Does Your Brisbane Yard Need?',
     metaDescription:
-      "Not sure whether you need garden maintenance or a full landscaping service? SEQ Landscaping explains the difference and helps Brisbane homeowners choose the right service.",
+      "Not sure whether you need garden maintenance or a full landscaping service? SEQ Landscaping and Garden Maintenance explains the difference and helps Brisbane homeowners choose the right service.",
     excerpt:
       'Garden maintenance and landscaping are related but serve very different purposes. Here is a clear breakdown to help you choose the right service for your Brisbane yard.',
     date: 'March 2026',
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        text: 'One of the most common points of confusion for Brisbane homeowners is the difference between garden maintenance and landscaping. The two are related but serve very different purposes — and choosing the right one (or the right combination) can save you time and money. Here\'s a clear breakdown from the team at SEQ Landscaping.',
+        text: 'One of the most common points of confusion for Brisbane homeowners is the difference between garden maintenance and landscaping. The two are related but serve very different purposes — and choosing the right one (or the right combination) can save you time and money. Here\'s a clear breakdown from the team at SEQ Landscaping and Garden Maintenance.',
       },
       {
         type: 'h2',
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'The SEQ Landscaping Approach',
+        text: 'The SEQ Landscaping and Garden Maintenance Approach',
       },
       {
         type: 'paragraph',
@@ -214,7 +214,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'brisbane-lawn-care-calendar',
     title: 'Brisbane Lawn Care Calendar: A Month-by-Month Guide',
     metaDescription:
-      "Your complete Brisbane lawn care calendar — what to do each month to keep your lawn healthy in Brisbane's subtropical climate. Expert tips from SEQ Landscaping.",
+      "Your complete Brisbane lawn care calendar — what to do each month to keep your lawn healthy in Brisbane's subtropical climate. Expert tips from SEQ Landscaping and Garden Maintenance.",
     excerpt:
       "Brisbane's subtropical climate means lawn care tasks change throughout the year. Here's our month-by-month guide for Brisbane homeowners.",
     date: 'March 2026',
@@ -282,7 +282,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'Let SEQ Landscaping Handle It',
+        text: 'Let SEQ Landscaping and Garden Maintenance Handle It',
       },
       {
         type: 'paragraph',

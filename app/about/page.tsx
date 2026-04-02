@@ -5,7 +5,7 @@ import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
 
 export const metadata: Metadata = {
-  title: 'About SEQ Landscaping — Brisbane Southside Local',
+  title: 'About SEQ Landscaping and Garden Maintenance — Brisbane Southside Local',
   description:
     'SEQ Landscaping & Garden Maintenance is a locally owned Brisbane Southside business run by Sam. Fully insured, 5-star rated. Lawn mowing, landscaping, garden maintenance and more.',
 };
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </ol>
           </nav>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-            About SEQ Landscaping
+            About SEQ Landscaping and Garden Maintenance
           </h1>
           <p className="text-lg" style={{ color: '#E8C99A' }}>
             Brisbane Southside&apos;s locally owned landscaping and garden maintenance specialists.

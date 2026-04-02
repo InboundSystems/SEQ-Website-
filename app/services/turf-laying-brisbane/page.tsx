@@ -223,7 +223,7 @@ export default function TurfLayingPage() {
               className="text-2xl sm:text-3xl font-bold mb-6"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              Why Brisbane Homeowners Choose SEQ Landscaping for Turf Laying
+              Why Brisbane Homeowners Choose SEQ Landscaping and Garden Maintenance for Turf Laying
             </h2>
             <ul className="space-y-3">
               {reasons.map((r) => (
