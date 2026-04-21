@@ -32,6 +32,34 @@ export default function BackgroundMusic() {
   const unlockedRef = useRef(false)
 
   useEffect(() => {
+    // YouTube IFrame API pushes entries to window.history (same-URL state changes)
+    // which corrupts Next.js App Router's navigation stack and causes "page couldn't
+    // load" errors on internal link clicks. Patch history to block those calls while
+    // still letting Next.js (identified by its __NA state key) navigate normally.
+    const origPushState = window.history.pushState.bind(window.history)
+    const origReplaceState = window.history.replaceState.bind(window.history)
+
+    function isNextjs(state: unknown): boolean {
+      return (
+        state != null &&
+        typeof state === 'object' &&
+        ('__NA' in (state as Record<string, unknown>) ||
+          '__PRIVATE_NEXTJS_INTERNALS_TREE' in (state as Record<string, unknown>))
+      )
+    }
+
+    window.history.pushState = function (state, title, url) {
+      if (isNextjs(state) || (url != null && String(url) !== window.location.href)) {
+        origPushState(state, title, url)
+      }
+    }
+
+    window.history.replaceState = function (state, title, url) {
+      if (isNextjs(state) || (url != null && String(url) !== window.location.href)) {
+        origReplaceState(state, title, url)
+      }
+    }
+
     function initPlayer() {
       if (!divRef.current || !window.YT?.Player) return
       playerRef.current = new window.YT.Player(divRef.current, {
@@ -85,6 +113,8 @@ export default function BackgroundMusic() {
     document.addEventListener('keydown', unlock)
 
     return () => {
+      window.history.pushState = origPushState
+      window.history.replaceState = origReplaceState
       document.removeEventListener('click', unlock)
       document.removeEventListener('scroll', unlock)
       document.removeEventListener('keydown', unlock)
