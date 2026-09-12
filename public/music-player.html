@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" /></head>
+<body style="margin:0;overflow:hidden">
+<div id="player"></div>
+<script>
+  var VIDEO_ID = 'zSAJ0l4OBHM';
+  var START_TIME = 161;
+  var player = null;
+  var pendingUnmute = false;
+
+  window.onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('player', {
+      height: '1',
+      width: '1',
+      videoId: VIDEO_ID,
+      playerVars: {
+        autoplay: 1,
+        start: START_TIME,
+        mute: 1,
+        controls: 0,
+        disablekb: 1,
+        fs: 0,
+        iv_load_policy: 3,
+        modestbranding: 1,
+        rel: 0,
+        playsinline: 1,
+      },
+      events: {
+        onReady: function (e) {
+          e.target.seekTo(START_TIME, true);
+          e.target.playVideo();
+          if (pendingUnmute) {
+            e.target.unMute();
+          }
+        },
+      },
+    });
+  };
+
+  window.addEventListener('message', function (event) {
+    if (!event.data || event.data.type !== 'seq-music') return;
+    if (event.data.action === 'unmute') {
+      pendingUnmute = true;
+      if (player) {
+        try {
+          player.unMute();
+          if (player.getPlayerState() !== 1) {
+            player.seekTo(START_TIME, true);
+            player.playVideo();
+          }
+        } catch (e) {}
+      }
+    } else if (event.data.action === 'mute') {
+      pendingUnmute = false;
+      if (player) {
+        try { player.mute(); } catch (e) {}
+      }
+    }
+  });
+
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  document.body.appendChild(tag);
+</script>
+</body>
+</html>

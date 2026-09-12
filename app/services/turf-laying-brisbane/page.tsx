@@ -122,6 +122,10 @@ export default function TurfLayingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Turf Laying"
         relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1734079692079-aae7e24a7035?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Laying fresh turf by hand',
+        }}
       >
         {/* Section 2 — Intro */}
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

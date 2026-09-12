@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, ChevronRight } from 'lucide-react';
 
@@ -12,11 +13,17 @@ interface RelatedService {
   href: string;
 }
 
+interface HeroImage {
+  src: string;
+  alt: string;
+}
+
 interface ServicePageLayoutProps {
   h1: string;
   breadcrumbs: BreadcrumbItem[];
   ctaServiceName: string;
   relatedServices: RelatedService[];
+  image: HeroImage;
   children: ReactNode;
 }
 
@@ -138,6 +145,7 @@ export function ServicePageLayout({
   breadcrumbs,
   ctaServiceName,
   relatedServices,
+  image,
   children,
 }: ServicePageLayoutProps) {
   return (
@@ -145,27 +153,42 @@ export function ServicePageLayout({
       {/* Hero banner — dark green, not full-screen */}
       <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs text-white/50 mb-6 flex-wrap">
-            {breadcrumbs.map((crumb, i) => (
-              <span key={crumb.url} className="flex items-center gap-2">
-                {i > 0 && <ChevronRight size={12} />}
-                {i < breadcrumbs.length - 1 ? (
-                  <Link href={crumb.url} className="hover:text-white transition-colors">
-                    {crumb.name}
-                  </Link>
-                ) : (
-                  <span className="text-white/80">{crumb.name}</span>
-                )}
-              </span>
-            ))}
-          </nav>
-          <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-3xl"
-            style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
-          >
-            {h1}
-          </h1>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+            <div className="lg:col-span-3">
+              {/* Breadcrumb */}
+              <nav className="flex items-center gap-2 text-xs text-white/50 mb-6 flex-wrap">
+                {breadcrumbs.map((crumb, i) => (
+                  <span key={crumb.url} className="flex items-center gap-2">
+                    {i > 0 && <ChevronRight size={12} />}
+                    {i < breadcrumbs.length - 1 ? (
+                      <Link href={crumb.url} className="hover:text-white transition-colors">
+                        {crumb.name}
+                      </Link>
+                    ) : (
+                      <span className="text-white/80">{crumb.name}</span>
+                    )}
+                  </span>
+                ))}
+              </nav>
+              <h1
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+              >
+                {h1}
+              </h1>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

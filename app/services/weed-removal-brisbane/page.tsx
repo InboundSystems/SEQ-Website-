@@ -75,7 +75,16 @@ export default function WeedRemovalPage() {
       <ServiceSchema name="Weed Removal Brisbane" description="Professional weed removal and control across Brisbane Southside. Manual weeding, lawn weed treatment and ongoing weed management contracts." url="https://seqlandscaping.base44.app/services/weed-removal-brisbane" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Weed Removal Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Weed Removal" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Weed Removal Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Weed Removal"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1621460249485-4e4f92c9de5d?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Hand weeding a garden bed',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>

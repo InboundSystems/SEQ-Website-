@@ -128,6 +128,10 @@ export default function GardenCleanUpPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Garden Clean Up"
         relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1780866701868-ddf82ea1f67e?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Overgrown yard before a garden clean-up',
+        }}
       >
         {/* Section 2 — Intro */}
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

@@ -75,7 +75,16 @@ export default function MulchingPage() {
       <ServiceSchema name="Garden Mulching Brisbane" description="Mulch supply and installation across Brisbane Southside. Pine bark, hardwood, sugar cane and pea straw mulching for residential and commercial gardens." url="https://seqlandscaping.base44.app/services/mulching-brisbane" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Garden Mulching Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Garden Mulching" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Garden Mulching Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Garden Mulching"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1768783028632-9b1ed438771b?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Fresh mulch spread over a garden bed',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>

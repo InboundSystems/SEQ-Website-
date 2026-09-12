@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   Scissors,
@@ -37,6 +38,8 @@ const services = [
     description:
       'Regular mowing, edging and lawn care for Brisbane Southside homes and businesses. Consistent results every time.',
     href: '/services/lawn-mowing-brisbane',
+    image: 'https://images.unsplash.com/photo-1458245201577-fc8a130b8829?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Lawn mower on freshly mowed green grass',
   },
   {
     icon: Sprout,
@@ -44,6 +47,8 @@ const services = [
     description:
       'Ongoing weeding, pruning, edging and seasonal garden care on your schedule. We keep it looking its best year-round.',
     href: '/services/garden-maintenance-brisbane',
+    image: 'https://images.unsplash.com/photo-1597868165956-03a6827955b1?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Hands planting a seedling in a garden bed',
   },
   {
     icon: Home,
@@ -51,6 +56,8 @@ const services = [
     description:
       'Custom outdoor transformations — from new garden beds to complete landscape installations. Your vision, our expertise.',
     href: '/services/landscaping-brisbane',
+    image: 'https://images.unsplash.com/photo-1700689807667-82630348b301?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Landscaped garden path with manicured hedges and flower beds',
   },
   {
     icon: Scissors,
@@ -58,6 +65,8 @@ const services = [
     description:
       'Precise hedge shaping and tree pruning for neat, healthy gardens year-round. Professional results guaranteed.',
     href: '/services/hedge-trimming-brisbane',
+    image: 'https://images.unsplash.com/photo-1543309959-4d45288d1629?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Gardener trimming a hedge with a power trimmer',
   },
   {
     icon: TreeDeciduous,
@@ -65,6 +74,8 @@ const services = [
     description:
       'Green waste removal and mulch supply & spread to keep your garden healthy and looking its best.',
     href: '/services/mulching-brisbane',
+    image: 'https://images.unsplash.com/photo-1679993082203-a5f504a6fd1a?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Wheelbarrow of garden waste ready for removal',
   },
   {
     icon: Wrench,
@@ -72,6 +83,8 @@ const services = [
     description:
       'Minor repairs, property maintenance and general handyman work across Brisbane Southside. No job too small.',
     href: '/services/handyman-brisbane',
+    image: 'https://images.unsplash.com/photo-1606676539940-12768ce0e762?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Handyman tools — drill, hammer and stud finder',
   },
 ];
 
@@ -189,29 +202,40 @@ export default function HomePage() {
                 const Icon = service.icon;
                 return (
                   <FadeIn key={service.title} delay={i * 0.08}>
-                    <div className="service-card group relative bg-white rounded-2xl p-8 shadow-sm border border-black/5 border-l-4 border-l-transparent hover:border-l-[#C17F3E] hover:-translate-y-1 hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                      <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                        style={{ backgroundColor: '#F5F0E8' }}
-                      >
-                        <Icon size={22} style={{ color: '#2D5A3D' }} />
+                    <div className="service-card group relative bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-transparent hover:border-l-[#C17F3E] hover:-translate-y-1 hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                      <div className="relative w-full aspect-[16/10] overflow-hidden">
+                        <Image
+                          src={service.image}
+                          alt={service.imageAlt}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
                       </div>
-                      <h3
-                        className="text-xl font-bold mb-3"
-                        style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
-                      >
-                        {service.title}
-                      </h3>
-                      <p className="text-sm leading-relaxed mb-5 flex-1" style={{ color: '#6B6B6B' }}>
-                        {service.description}
-                      </p>
-                      <Link
-                        href={service.href}
-                        className="text-sm font-medium hover:underline transition-colors"
-                        style={{ color: '#4A8C5C' }}
-                      >
-                        Learn More →
-                      </Link>
+                      <div className="p-8 flex flex-col flex-1">
+                        <div
+                          className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 -mt-14 relative z-10 shadow-sm"
+                          style={{ backgroundColor: '#FDFAF5' }}
+                        >
+                          <Icon size={22} style={{ color: '#2D5A3D' }} />
+                        </div>
+                        <h3
+                          className="text-xl font-bold mb-3"
+                          style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
+                        >
+                          {service.title}
+                        </h3>
+                        <p className="text-sm leading-relaxed mb-5 flex-1" style={{ color: '#6B6B6B' }}>
+                          {service.description}
+                        </p>
+                        <Link
+                          href={service.href}
+                          className="text-sm font-medium hover:underline transition-colors"
+                          style={{ color: '#4A8C5C' }}
+                        >
+                          Learn More →
+                        </Link>
+                      </div>
                     </div>
                   </FadeIn>
                 );
@@ -224,14 +248,19 @@ export default function HomePage() {
         <section className="overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              {/* Left — dark green */}
+              {/* Left — image with dark overlay */}
               <FadeIn direction="left">
-                <div
-                  className="flex items-center justify-center px-12 py-24 min-h-[400px]"
-                  style={{ backgroundColor: '#1C3A2A' }}
-                >
+                <div className="relative flex items-center justify-center px-12 py-24 min-h-[400px] overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1597201278257-3687be27d954?auto=format&fit=crop&w=1200&q=80"
+                    alt="Lush, well-maintained garden beds"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0" style={{ backgroundColor: 'rgba(28, 58, 42, 0.8)' }} />
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-white leading-tight"
+                    className="relative z-10 text-3xl sm:text-4xl font-bold text-white leading-tight"
                     style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
                   >
                     Why Brisbane Homeowners Choose SEQ Landscaping and Garden Maintenance

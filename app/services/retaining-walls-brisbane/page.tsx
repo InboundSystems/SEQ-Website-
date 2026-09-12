@@ -76,7 +76,16 @@ export default function RetainingWallsPage() {
       <ServiceSchema name="Retaining Walls Brisbane" description="Retaining wall design and construction across Brisbane Southside. Timber sleeper, concrete block and natural stone walls for residential and commercial properties." url="https://seqlandscaping.base44.app/services/retaining-walls-brisbane" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Retaining Walls Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Retaining Wall" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Retaining Walls Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Retaining Wall"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1780658309630-af036c67efd5?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Stone gabion retaining wall in a garden',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>

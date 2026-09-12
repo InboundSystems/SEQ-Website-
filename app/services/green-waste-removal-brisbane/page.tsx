@@ -75,7 +75,16 @@ export default function GreenWasteRemovalPage() {
       <ServiceSchema name="Green Waste Removal Brisbane" description="Fast green waste removal across Brisbane Southside. Garden prunings, branches, lawn clippings and bulk green waste collected and responsibly disposed of." url="https://seqlandscaping.base44.app/services/green-waste-removal-brisbane" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Green Waste Removal Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Green Waste Removal" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Green Waste Removal Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Green Waste Removal"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1679993082203-a5f504a6fd1a?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Wheelbarrow of garden waste ready for removal',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>

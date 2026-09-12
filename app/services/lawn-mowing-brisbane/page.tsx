@@ -102,6 +102,10 @@ export default function LawnMowingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Lawn Mowing"
         relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1458245201577-fc8a130b8829?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Lawn mower on freshly mowed green grass',
+        }}
       >
         {/* Section 2 — Intro */}
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 -mx-6 px-6 lg:-mx-0 lg:px-0 rounded-2xl mb-2">

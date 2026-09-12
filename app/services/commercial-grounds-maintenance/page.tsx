@@ -77,7 +77,16 @@ export default function CommercialGroundsMaintenancePage() {
       <ServiceSchema name="Commercial Grounds Maintenance Brisbane" description="Reliable commercial grounds maintenance across Brisbane. Regular lawn mowing, garden care, hedge trimming and common area upkeep for strata, retail, office and industrial sites." url="https://seqlandscaping.base44.app/services/commercial-grounds-maintenance" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Commercial Grounds Maintenance Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Commercial Grounds Maintenance" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Commercial Grounds Maintenance Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Commercial Grounds Maintenance"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1750987776992-19c2abd847ee?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Ride-on mower maintaining a large commercial lawn',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>

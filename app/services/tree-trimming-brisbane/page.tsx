@@ -76,7 +76,16 @@ export default function TreeTrimmingPage() {
       <ServiceSchema name="Tree Trimming Brisbane" description="Professional tree trimming and pruning services across Brisbane Southside. Crown thinning, dead branch removal, palm trimming and shape pruning." url="https://seqlandscaping.base44.app/services/tree-trimming-brisbane" areaServed="Brisbane Southside, Greater Brisbane" />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faqs={faqs} />
-      <ServicePageLayout h1="Tree Trimming Brisbane" breadcrumbs={breadcrumbs} ctaServiceName="Tree Trimming" relatedServices={relatedServices}>
+      <ServicePageLayout
+        h1="Tree Trimming Brisbane"
+        breadcrumbs={breadcrumbs}
+        ctaServiceName="Tree Trimming"
+        relatedServices={relatedServices}
+        image={{
+          src: 'https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=1200&q=80',
+          alt: 'Arborist pruning tree branches',
+        }}
+      >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
