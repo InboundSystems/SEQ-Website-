@@ -98,14 +98,14 @@ export default function BlogIndexPage() {
               Need Help with Your Brisbane Garden?
             </h2>
             <p className="text-sm mb-6" style={{ color: '#6B6B6B' }}>
-              Call Sam on 0490 770 382 for a free, no-obligation quote.
+              Text Sam on 0432 404 881 for a free, no-obligation quote.
             </p>
             <a
-              href="tel:0490770382"
+              href="sms:0432404881"
               className="inline-block px-8 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#1C3A2A', color: '#FDFAF5' }}
             >
-              Call 0490 770 382
+              Text 0432 404 881
             </a>
           </section>
         </FadeIn>

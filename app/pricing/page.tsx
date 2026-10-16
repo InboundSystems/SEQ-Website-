@@ -7,7 +7,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Pricing Guide — Landscaping & Garden Services Brisbane',
   description:
-    'Transparent pricing for lawn mowing, garden maintenance, landscaping, mulching and more across Brisbane Southside. Indicative costs to help you budget. Free quotes — call Sam on 0490 770 382.',
+    'Transparent pricing for lawn mowing, garden maintenance, landscaping, mulching and more across Brisbane Southside. Indicative costs to help you budget. Free quotes — text Sam on 0432 404 881.',
 };
 
 const breadcrumbs = [
@@ -67,7 +67,7 @@ const faqs = [
   {
     question: 'Are these prices fixed or indicative?',
     answer:
-      'These are indicative price ranges to help you budget. Actual pricing depends on your property\'s specific size, condition, access, and scope of work. We always provide a free, no-obligation quote before starting any work — call Sam on 0490 770 382.',
+      'These are indicative price ranges to help you budget. Actual pricing depends on your property\'s specific size, condition, access, and scope of work. We always provide a free, no-obligation quote before starting any work — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you charge a call-out fee?',
@@ -77,12 +77,12 @@ const faqs = [
   {
     question: 'Do you offer discounts for regular maintenance?',
     answer:
-      'Yes — clients on regular fortnightly or monthly maintenance schedules receive discounted rates compared to one-off visits. Regular clients also get priority scheduling. Ask Sam about our maintenance packages when you call.',
+      'Yes — clients on regular fortnightly or monthly maintenance schedules receive discounted rates compared to one-off visits. Regular clients also get priority scheduling. Ask Sam about our maintenance packages when you get in touch.',
   },
   {
     question: 'How do I get an exact quote?',
     answer:
-      'Call Sam on 0490 770 382 or email samhindmarsh@seqlandscaping.net. For larger jobs we\'ll arrange a free on-site visit. For routine services like lawn mowing we can often quote over the phone based on your yard size.',
+      'Text Sam on 0432 404 881 or email samhindmarsh@seqlandscaping.net. For larger jobs we\'ll arrange a free on-site visit. For routine services like lawn mowing we can often quote over the phone based on your yard size.',
   },
 ];
 
@@ -112,7 +112,7 @@ export default function PricingPage() {
             Pricing Guide
           </h1>
           <p className="text-lg" style={{ color: '#E8C99A' }}>
-            Indicative pricing for landscaping and garden services across Brisbane Southside. Free quotes — call Sam on 0490 770 382.
+            Indicative pricing for landscaping and garden services across Brisbane Southside. Free quotes — text Sam on 0432 404 881.
           </p>
         </div>
       </section>
@@ -123,7 +123,7 @@ export default function PricingPage() {
         <FadeIn>
           <section style={{ backgroundColor: '#F5F0E8' }} className="py-8 px-8 rounded-2xl mb-10">
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
-              We believe in transparent, fair pricing. The ranges below give you a guide to typical costs for our services across Brisbane Southside. Every job is different — property size, access, condition, and scope all affect the final price — so we always provide a <strong>free, no-obligation quote</strong> before starting any work. Call Sam directly on <a href="tel:0490770382" className="font-semibold hover:underline" style={{ color: '#1C3A2A' }}>0490 770 382</a>.
+              We believe in transparent, fair pricing. The ranges below give you a guide to typical costs for our services across Brisbane Southside. Every job is different — property size, access, condition, and scope all affect the final price — so we always provide a <strong>free, no-obligation quote</strong> before starting any work. Text Sam directly on <a href="sms:0432404881" className="font-semibold hover:underline" style={{ color: '#1C3A2A' }}>0432 404 881</a>.
             </p>
           </section>
         </FadeIn>
@@ -164,11 +164,11 @@ export default function PricingPage() {
             <p className="text-white mb-6 text-sm">No call-out fees. No obligation. Just a straight answer from Sam.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:0490770382"
+                href="sms:0432404881"
                 className="inline-block px-8 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#1C3A2A', color: '#FDFAF5' }}
               >
-                Call 0490 770 382
+                Text 0432 404 881
               </a>
               <Link
                 href="/contact"

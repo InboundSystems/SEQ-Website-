@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | SEQ Landscaping and Garden Maintenance",
   },
   description:
-    "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka & all South Brisbane suburbs. Free quotes — call Sam on 0490 770 382.",
+    "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka & all South Brisbane suburbs. Free quotes — text Sam on 0432 404 881.",
   keywords: [
     "landscaping brisbane",
     "lawn mowing brisbane",

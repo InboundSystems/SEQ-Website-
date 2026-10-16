@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Retaining Walls Brisbane',
   description:
-    'Retaining wall design and construction across Brisbane Southside. Sleeper walls, block walls, stone walls. Residential and commercial. Free quotes — call Sam on 0490 770 382.',
+    'Retaining wall design and construction across Brisbane Southside. Sleeper walls, block walls, stone walls. Residential and commercial. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -25,7 +25,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free On-Site Quote', description: 'Call Sam on 0490 770 382. We\'ll visit your property, assess the site conditions, and provide a detailed quote including wall type recommendation.' },
+  { title: 'Free On-Site Quote', description: 'Text Sam on 0432 404 881. We\'ll visit your property, assess the site conditions, and provide a detailed quote including wall type recommendation.' },
   { title: 'Design & Planning', description: 'We design the wall to suit your site — including drainage, footings, and material selection for Brisbane\'s climate and soil.' },
   { title: 'Professional Construction', description: 'Our team builds your retaining wall to the highest standard, with correct drainage to ensure longevity through Brisbane\'s wet seasons.' },
   { title: 'Finishing & Clean-Up', description: 'We complete all finishing work and remove all construction debris, leaving your property clean and your garden transformed.' },
@@ -37,19 +37,19 @@ const reasons = [
   'Built to last — correct drainage and footings every time',
   'All wall types: sleeper, block, stone',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation on-site quotes — call Sam on 0490 770 382',
+  'Free, no-obligation on-site quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does a retaining wall cost in Brisbane?',
     answer:
-      'Retaining wall costs in Brisbane typically range from $200–$450 per linear metre, depending on wall type, height, and site conditions. Timber sleeper walls are generally more affordable; concrete block and stone walls are more expensive but longer-lasting. Call Sam on 0490 770 382 for a free quote.',
+      'Retaining wall costs in Brisbane typically range from $200–$450 per linear metre, depending on wall type, height, and site conditions. Timber sleeper walls are generally more affordable; concrete block and stone walls are more expensive but longer-lasting. Text Sam on 0432 404 881 for a free quote.',
   },
   {
     question: 'Do you need council approval for a retaining wall in Brisbane?',
     answer:
-      'In Brisbane, retaining walls under 1 metre generally don\'t require council approval. Walls over 1 metre, or near property boundaries, may require a development application. We\'ll advise you on requirements during your free quote — call Sam on 0490 770 382.',
+      'In Brisbane, retaining walls under 1 metre generally don\'t require council approval. Walls over 1 metre, or near property boundaries, may require a development application. We\'ll advise you on requirements during your free quote — text Sam on 0432 404 881.',
   },
   {
     question: "What's the best type of retaining wall for Brisbane?",

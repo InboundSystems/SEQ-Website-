@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: "If keeping up with mowing in Brisbane's growing season is a challenge, a regular lawn mowing contract with SEQ Landscaping & Garden Maintenance makes it easy. We service all Brisbane Southside suburbs on a weekly or fortnightly schedule — keeping your lawn at the perfect height year-round. Call Sam on 0490 770 382 for a free quote.",
+        text: "If keeping up with mowing in Brisbane's growing season is a challenge, a regular lawn mowing contract with SEQ Landscaping & Garden Maintenance makes it easy. We service all Brisbane Southside suburbs on a weekly or fortnightly schedule — keeping your lawn at the perfect height year-round. Text Sam on 0432 404 881 for a free quote.",
       },
     ],
   },
@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: "At SEQ Landscaping & Garden Maintenance, we offer both services — and often the best solution is a combination. Many of our Brisbane clients start with a one-off landscaping project to get their garden to a great standard, then move to a regular maintenance contract to keep it that way. Call Sam on 0490 770 382 to discuss what your Brisbane garden needs — free, no-obligation advice.",
+        text: "At SEQ Landscaping & Garden Maintenance, we offer both services — and often the best solution is a combination. Many of our Brisbane clients start with a one-off landscaping project to get their garden to a great standard, then move to a regular maintenance contract to keep it that way. Text Sam on 0432 404 881 to discuss what your Brisbane garden needs — free, no-obligation advice.",
       },
     ],
   },
@@ -286,7 +286,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: "Keeping up with Brisbane's year-round lawn care calendar is a lot of work. Our regular lawn mowing and garden maintenance contracts across Brisbane Southside take the effort off your hands — we handle the scheduling, the equipment, and the expertise. Call Sam on 0490 770 382 for a free quote.",
+        text: "Keeping up with Brisbane's year-round lawn care calendar is a lot of work. Our regular lawn mowing and garden maintenance contracts across Brisbane Southside take the effort off your hands — we handle the scheduling, the equipment, and the expertise. Text Sam on 0432 404 881 for a free quote.",
       },
     ],
   },

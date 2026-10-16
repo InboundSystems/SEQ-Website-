@@ -28,7 +28,7 @@ const breadcrumbs = [
 export const metadata: Metadata = {
   title: 'Landscaping & Garden Services Brisbane',
   description:
-    'Professional landscaping and garden maintenance services in Brisbane. Lawn mowing, garden maintenance, landscaping design, hedge trimming, mulching, irrigation and more. Call 0490 770 382 for a free quote.',
+    'Professional landscaping and garden maintenance services in Brisbane. Lawn mowing, garden maintenance, landscaping design, hedge trimming, mulching, irrigation and more. Text 0432 404 881 for a free quote.',
 };
 
 const allServices = [
@@ -149,9 +149,9 @@ export default function ServicesPage() {
               From regular lawn mowing and garden maintenance to complete landscape
               transformations — our experienced team delivers quality results every time.
               Based in Tarragindi, we service all surrounding suburbs with fast response times.
-              Call Sam on{' '}
-              <a href="tel:0490770382" className="font-medium hover:underline" style={{ color: '#1C3A2A' }}>
-                0490 770 382
+              Text Sam on{' '}
+              <a href="sms:0432404881" className="font-medium hover:underline" style={{ color: '#1C3A2A' }}>
+                0432 404 881
               </a>{' '}
               for a free, no-obligation quote.
             </p>
@@ -209,16 +209,16 @@ export default function ServicesPage() {
             Ready to Get Started?
           </h2>
           <p className="text-sm text-white/85 mb-8">
-            Call Sam for a free, no-obligation quote on any of our Brisbane landscaping services.
+            Text Sam for a free, no-obligation quote on any of our Brisbane landscaping services.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:0490770382"
+              href="sms:0432404881"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-medium bg-white transition-all hover:opacity-90"
               style={{ color: '#C17F3E' }}
             >
               <Phone size={16} />
-              Call Sam — 0490 770 382
+              Text Sam — 0432 404 881
             </a>
             <Link
               href="/contact"

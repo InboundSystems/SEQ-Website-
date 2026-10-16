@@ -4,7 +4,7 @@ export function LocalBusinessSchema() {
     "@type": "LandscapeDesigner",
     name: "SEQ Landscaping & Garden Maintenance",
     url: "https://seqlandscaping.base44.app",
-    telephone: "0490770382",
+    telephone: "0432404881",
     email: "samhindmarsh@seqlandscaping.net",
     address: {
       "@type": "PostalAddress",

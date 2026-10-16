@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Turf Laying Brisbane',
   description:
-    'Professional turf installation across Brisbane. Instant turf supply and laying for residential and commercial properties. Free quotes — call Sam on 0490 770 382.',
+    'Professional turf installation across Brisbane. Instant turf supply and laying for residential and commercial properties. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -46,7 +46,7 @@ const varieties = [
 const steps = [
   {
     title: 'Free Quote & Site Assessment',
-    description: 'Call Sam on 0490 770 382 for a free quote. We\'ll assess your site and recommend the right turf variety for your conditions.',
+    description: 'Text Sam on 0432 404 881 for a free quote. We\'ll assess your site and recommend the right turf variety for your conditions.',
   },
   {
     title: 'Turf Sourced Fresh',
@@ -72,14 +72,14 @@ const reasons = [
   'Quality turf sourced fresh from Brisbane suppliers — laid same day',
   'Expert advice on turf variety selection for Brisbane conditions',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does turf laying cost in Brisbane?',
     answer:
-      'Turf laying in Brisbane typically costs $15–$25 per square metre, including supply and installation. The total cost depends on area size, turf variety chosen, and site preparation required. Call Sam on 0490 770 382 for a free, no-obligation quote for your property.',
+      'Turf laying in Brisbane typically costs $15–$25 per square metre, including supply and installation. The total cost depends on area size, turf variety chosen, and site preparation required. Text Sam on 0432 404 881 for a free, no-obligation quote for your property.',
   },
   {
     question: "What's the best time of year to lay turf in Brisbane?",

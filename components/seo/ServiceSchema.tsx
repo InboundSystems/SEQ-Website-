@@ -19,7 +19,7 @@ export function ServiceSchema({
     provider: {
       "@type": "LocalBusiness",
       name: "SEQ Landscaping & Garden Maintenance",
-      telephone: "0490770382",
+      telephone: "0432404881",
       address: {
         "@type": "PostalAddress",
         streetAddress: "48 Downes St",

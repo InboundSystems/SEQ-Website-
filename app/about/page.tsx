@@ -159,14 +159,14 @@ export default function AboutPage() {
         <FadeIn>
           <section style={{ backgroundColor: '#1C3A2A' }} className="py-10 px-8 rounded-2xl text-center">
             <h2 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Ready to Get Started?</h2>
-            <p className="mb-6 text-sm" style={{ color: '#E8C99A' }}>Call Sam directly for a free, no-obligation quote.</p>
+            <p className="mb-6 text-sm" style={{ color: '#E8C99A' }}>Text Sam directly for a free, no-obligation quote.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:0490770382"
+                href="sms:0432404881"
                 className="inline-block px-8 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#C17F3E', color: '#FDFAF5' }}
               >
-                Call 0490 770 382
+                Text 0432 404 881
               </a>
               <Link
                 href="/contact"

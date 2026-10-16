@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Garden Maintenance Brisbane',
   description:
-    'Reliable garden maintenance in Brisbane — weeding, pruning, edging, fertilising & seasonal clean-ups. Regular contracts available. Call Sam on 0490 770 382 for a free quote.',
+    'Reliable garden maintenance in Brisbane — weeding, pruning, edging, fertilising & seasonal clean-ups. Regular contracts available. Text Sam on 0432 404 881 for a free quote.',
 };
 
 const services = [
@@ -29,7 +29,7 @@ const steps = [
   {
     title: 'Free Quote',
     description:
-      'Call Sam on 0490 770 382 or send an enquiry online. We\'ll assess your garden and confirm pricing before any work begins.',
+      'Text Sam on 0432 404 881 or send an enquiry online. We\'ll assess your garden and confirm pricing before any work begins.',
   },
   {
     title: 'We Come to You',
@@ -54,14 +54,14 @@ const reasons = [
   'Experienced team with a genuine love of gardens',
   'Flexible scheduling — fortnightly, monthly or one-off visits',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How often should I get garden maintenance done in Brisbane?',
     answer:
-      "For most Brisbane Southside homes, fortnightly or monthly garden maintenance keeps gardens healthy and presentable. Brisbane's subtropical climate means faster growth — particularly in summer. We'll recommend the right frequency after assessing your garden. Call Sam on 0490 770 382 for a free quote.",
+      "For most Brisbane Southside homes, fortnightly or monthly garden maintenance keeps gardens healthy and presentable. Brisbane's subtropical climate means faster growth — particularly in summer. We'll recommend the right frequency after assessing your garden. Text Sam on 0432 404 881 for a free quote.",
   },
   {
     question: 'What does a garden maintenance visit include?',
@@ -71,7 +71,7 @@ const faqs = [
   {
     question: 'Do you offer ongoing garden maintenance contracts in Brisbane?',
     answer:
-      'Yes — we offer weekly, fortnightly, and monthly garden maintenance contracts across Brisbane Southside. Ongoing clients receive priority booking and consistent service from our experienced team. Call Sam on 0490 770 382 to discuss a maintenance plan.',
+      'Yes — we offer weekly, fortnightly, and monthly garden maintenance contracts across Brisbane Southside. Ongoing clients receive priority booking and consistent service from our experienced team. Text Sam on 0432 404 881 to discuss a maintenance plan.',
   },
 ];
 

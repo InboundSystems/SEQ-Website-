@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Landscaping Brisbane',
   description:
-    'Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways, retaining walls & outdoor living. Free quotes — call 0490 770 382.',
+    'Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways, retaining walls & outdoor living. Free quotes — text 0432 404 881.',
 };
 
 const services = [
@@ -29,7 +29,7 @@ const steps = [
   {
     title: 'Free Consultation & Quote',
     description:
-      'Call Sam on 0490 770 382. We\'ll visit your property, discuss your vision, and provide a clear, itemised quote with no hidden costs.',
+      'Text Sam on 0432 404 881. We\'ll visit your property, discuss your vision, and provide a clear, itemised quote with no hidden costs.',
   },
   {
     title: 'Design & Planning',
@@ -54,14 +54,14 @@ const reasons = [
   'End-to-end service — design, installation and aftercare',
   'Both residential and commercial landscaping projects',
   '5-star rated by Brisbane homeowners',
-  'Free, itemised quotes — call Sam on 0490 770 382',
+  'Free, itemised quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does landscaping cost in Brisbane?',
     answer:
-      'Landscaping costs in Brisbane vary widely based on scope — from $500 for a simple garden bed installation to $10,000+ for a complete outdoor transformation. We provide free, itemised quotes so you know exactly what\'s included. Call Sam on 0490 770 382.',
+      'Landscaping costs in Brisbane vary widely based on scope — from $500 for a simple garden bed installation to $10,000+ for a complete outdoor transformation. We provide free, itemised quotes so you know exactly what\'s included. Text Sam on 0432 404 881.',
   },
   {
     question: 'Do you offer landscaping design as well as installation?',

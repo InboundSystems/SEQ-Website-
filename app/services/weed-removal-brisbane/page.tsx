@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Weed Removal Brisbane',
   description:
-    'Professional weed removal and control across Brisbane Southside. Garden weeding, lawn weed treatment & ongoing weed management. Free quotes — call Sam on 0490 770 382.',
+    'Professional weed removal and control across Brisbane Southside. Garden weeding, lawn weed treatment & ongoing weed management. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -24,7 +24,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free Quote', description: 'Call Sam on 0490 770 382. We\'ll assess your garden\'s weed situation and recommend the most effective approach.' },
+  { title: 'Free Quote', description: 'Text Sam on 0432 404 881. We\'ll assess your garden\'s weed situation and recommend the most effective approach.' },
   { title: 'Weed Assessment', description: 'We identify weed species and determine whether manual removal, herbicide treatment, or a combination is most appropriate for your garden.' },
   { title: 'Professional Removal', description: 'Our team manually removes weeds or applies targeted treatments — always with care for your plants, soil, and any children or pets.' },
   { title: 'Ongoing Management', description: 'We recommend and set up a regular maintenance schedule to keep weeds under control long-term.' },
@@ -36,7 +36,7 @@ const reasons = [
   'Safe approach — child and pet safety always considered',
   'Flexible: manual weeding or targeted herbicide treatment',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: 'How much does weed removal cost in Brisbane?',
     answer:
-      'Weed removal pricing depends on garden size and weed density. A typical residential garden weeding service starts from around $80. For heavily overgrown areas, a one-off clean-up followed by a maintenance contract is often the most cost-effective approach. Call Sam for a free quote.',
+      'Weed removal pricing depends on garden size and weed density. A typical residential garden weeding service starts from around $80. For heavily overgrown areas, a one-off clean-up followed by a maintenance contract is often the most cost-effective approach. Text Sam for a free quote.',
   },
 ];
 

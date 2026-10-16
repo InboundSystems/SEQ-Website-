@@ -164,11 +164,11 @@ export default async function BlogPostPage({
               Need help with your Brisbane garden?
             </p>
             <a
-              href="tel:0490770382"
+              href="sms:0432404881"
               className="inline-block px-8 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#1C3A2A', color: '#FDFAF5' }}
             >
-              Call Sam on 0490 770 382
+              Text Sam on 0432 404 881
             </a>
           </section>
 

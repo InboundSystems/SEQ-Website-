@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Commercial Grounds Maintenance Brisbane',
   description:
-    'Reliable commercial grounds maintenance across Brisbane. Lawn mowing, garden care, rubbish removal and regular upkeep for offices, strata, retail and industrial sites. Call Sam on 0490 770 382.',
+    'Reliable commercial grounds maintenance across Brisbane. Lawn mowing, garden care, rubbish removal and regular upkeep for offices, strata, retail and industrial sites. Text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -26,7 +26,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Site Assessment', description: 'Call Sam on 0490 770 382 or email us. We\'ll visit your site, assess the scope, and provide a detailed quote tailored to your property\'s requirements.' },
+  { title: 'Site Assessment', description: 'Text Sam on 0432 404 881 or email us. We\'ll visit your site, assess the scope, and provide a detailed quote tailored to your property\'s requirements.' },
   { title: 'Customised Maintenance Plan', description: 'We develop a maintenance schedule — weekly, fortnightly, or monthly — to keep your grounds consistently presentable year-round.' },
   { title: 'Reliable Regular Service', description: 'Our team arrives on schedule, every time. We\'ll notify you in advance of any changes due to weather and make up missed visits promptly.' },
   { title: 'Ongoing Communication', description: 'You\'ll have direct contact with Sam. We report any issues noticed on site and adjust the maintenance scope as your property\'s needs change.' },
@@ -38,14 +38,14 @@ const reasons = [
   'Direct communication with Sam — no call centres',
   'Flexible contracts: weekly, fortnightly, monthly',
   'Experience with strata, retail, office and industrial sites',
-  'Free on-site quotes — call Sam on 0490 770 382',
+  'Free on-site quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'What types of commercial properties do you maintain?',
     answer:
-      'We maintain a wide range of commercial properties across Brisbane Southside including office parks, retail centres, strata and body corporate complexes, industrial sites, childcare centres, and medical facilities. If you have grounds that need regular maintenance, we can help — call Sam on 0490 770 382 to discuss your specific property.',
+      'We maintain a wide range of commercial properties across Brisbane Southside including office parks, retail centres, strata and body corporate complexes, industrial sites, childcare centres, and medical facilities. If you have grounds that need regular maintenance, we can help — text Sam on 0432 404 881 to discuss your specific property.',
   },
   {
     question: 'Do you offer regular commercial maintenance contracts?',

@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Garden Mulching Brisbane',
   description:
-    'Mulch supply and installation across Brisbane Southside. Suppress weeds, retain moisture & improve garden health. Professional mulching service — free quotes on 0490 770 382.',
+    'Mulch supply and installation across Brisbane Southside. Suppress weeds, retain moisture & improve garden health. Professional mulching service — free quotes on 0432 404 881.',
 };
 
 const services = [
@@ -24,7 +24,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free Quote', description: 'Call Sam on 0490 770 382. We\'ll assess your garden beds and recommend the right mulch type and depth for your conditions.' },
+  { title: 'Free Quote', description: 'Text Sam on 0432 404 881. We\'ll assess your garden beds and recommend the right mulch type and depth for your conditions.' },
   { title: 'Garden Bed Prep', description: 'We remove existing weeds and prepare garden beds before laying mulch for best results.' },
   { title: 'Mulch Supply & Spread', description: 'We source and deliver quality mulch and spread it evenly to the correct depth — 50–75mm for best weed suppression and moisture retention.' },
   { title: 'Clean Finish', description: 'We ensure a neat, clean finish and remove any excess material from paths, lawns, and garden edges.' },
@@ -36,14 +36,14 @@ const reasons = [
   'Right mulch type recommended for your specific garden',
   'Supply and spreading included — fully managed service',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does mulching cost in Brisbane?',
     answer:
-      'Mulching in Brisbane typically costs $80–$200 for a standard residential garden, including supply and spreading. Larger areas are priced per cubic metre. Call Sam on 0490 770 382 for a free quote based on your garden size.',
+      'Mulching in Brisbane typically costs $80–$200 for a standard residential garden, including supply and spreading. Larger areas are priced per cubic metre. Text Sam on 0432 404 881 for a free quote based on your garden size.',
   },
   {
     question: 'What type of mulch is best for Brisbane gardens?',

@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Garden Clean Up Brisbane',
   description:
-    'One-off garden clean-ups for Brisbane homes. Overgrown gardens, pre-sale tidy-ups, new home clean-outs. Fast turnaround. Call Sam on 0490 770 382 for a free quote.',
+    'One-off garden clean-ups for Brisbane homes. Overgrown gardens, pre-sale tidy-ups, new home clean-outs. Fast turnaround. Text Sam on 0432 404 881 for a free quote.',
 };
 
 const included = [
@@ -56,7 +56,7 @@ const situations = [
 const steps = [
   {
     title: 'Free Quote',
-    description: 'Call Sam on 0490 770 382 or submit an enquiry. We\'ll assess the scope and confirm pricing before any work begins.',
+    description: 'Text Sam on 0432 404 881 or submit an enquiry. We\'ll assess the scope and confirm pricing before any work begins.',
   },
   {
     title: 'Scope Assessment',
@@ -78,14 +78,14 @@ const reasons = [
   'Fast turnaround — most garden clean-ups completed same day or same week',
   'Full green waste removal included — we take everything away',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does a garden clean up cost in Brisbane?',
     answer:
-      'Garden clean-up costs in Brisbane vary based on garden size and the amount of overgrowth. A standard residential clean-up typically ranges from $200–$600. Large or heavily overgrown gardens may be more. We provide a free, no-obligation quote before any work begins — call Sam on 0490 770 382.',
+      'Garden clean-up costs in Brisbane vary based on garden size and the amount of overgrowth. A standard residential clean-up typically ranges from $200–$600. Large or heavily overgrown gardens may be more. We provide a free, no-obligation quote before any work begins — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you remove all garden waste after a clean up?',
@@ -95,7 +95,7 @@ const faqs = [
   {
     question: 'How quickly can you do a garden clean up in Brisbane?',
     answer:
-      'We offer fast turnaround on garden clean-ups across Brisbane Southside. Most residential clean-ups can be completed within the same week of enquiry — often sooner. Call Sam on 0490 770 382 to check availability for your suburb.',
+      'We offer fast turnaround on garden clean-ups across Brisbane Southside. Most residential clean-ups can be completed within the same week of enquiry — often sooner. Text Sam on 0432 404 881 to check availability for your suburb.',
   },
 ];
 

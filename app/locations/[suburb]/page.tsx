@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!suburb) return {};
   return {
     title: `Landscaping ${suburb.name} Brisbane`,
-    description: `SEQ Landscaping & Garden Maintenance services ${suburb.name} with lawn mowing, garden maintenance, tree trimming & more. Local Brisbane Southside experts. Free quotes — call 0490 770 382.`,
+    description: `SEQ Landscaping & Garden Maintenance services ${suburb.name} with lawn mowing, garden maintenance, tree trimming & more. Local Brisbane Southside experts. Free quotes — text 0432 404 881.`,
   };
 }
 
@@ -54,11 +54,11 @@ export default async function SuburbPage({
   const faqs = [
     {
       question: `Do you service ${suburb.name} for lawn mowing and garden maintenance?`,
-      answer: `Yes — ${suburb.name} is within our core Brisbane Southside service area. We regularly service homes and businesses in ${suburb.name} ${suburb.postcode}. Call Sam on 0490 770 382 to confirm availability.`,
+      answer: `Yes — ${suburb.name} is within our core Brisbane Southside service area. We regularly service homes and businesses in ${suburb.name} ${suburb.postcode}. Text Sam on 0432 404 881 to confirm availability.`,
     },
     {
       question: `How much does lawn mowing cost in ${suburb.name}?`,
-      answer: `Lawn mowing prices start from $60 for a standard residential lawn in ${suburb.name}. Call Sam on 0490 770 382 for a free, no-obligation quote based on your property size.`,
+      answer: `Lawn mowing prices start from $60 for a standard residential lawn in ${suburb.name}. Text Sam on 0432 404 881 for a free, no-obligation quote based on your property size.`,
     },
     {
       question: `Do you offer regular garden maintenance contracts in ${suburb.name}?`,
@@ -263,9 +263,9 @@ export default async function SuburbPage({
               Get a Free Quote in {suburb.name}
             </h2>
             <p className="text-white mb-2 text-sm">
-              Ready to book lawn mowing or garden maintenance in {suburb.name}? Call Sam directly on{' '}
-              <a href="tel:0490770382" className="font-bold underline">
-                0490 770 382
+              Ready to book lawn mowing or garden maintenance in {suburb.name}? Text Sam directly on{' '}
+              <a href="sms:0432404881" className="font-bold underline">
+                0432 404 881
               </a>{' '}
               or send us a message below.
             </p>
@@ -277,11 +277,11 @@ export default async function SuburbPage({
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:0490770382"
+                href="sms:0432404881"
                 className="inline-block px-8 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#1C3A2A', color: '#FDFAF5' }}
               >
-                Call 0490 770 382
+                Text 0432 404 881
               </a>
               <Link
                 href="/contact"

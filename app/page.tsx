@@ -28,7 +28,7 @@ import { FadeIn, ScaleIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping and Garden Maintenance',
   description:
-    "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka, Fairfield, Salisbury & all South Brisbane suburbs. Free quotes — call Sam on 0490 770 382.",
+    "Brisbane Southside's trusted lawn mowing and garden maintenance specialists. Servicing Tarragindi, Annerley, Moorooka, Fairfield, Salisbury & all South Brisbane suburbs. Free quotes — text Sam on 0432 404 881.",
 };
 
 const services = [
@@ -115,7 +115,7 @@ const reasons = [
   {
     icon: MessageSquare,
     title: 'Free No-Obligation Quotes',
-    description: 'Call Sam and get a straight answer on price — no surprises.',
+    description: 'Text Sam and get a straight answer on price — no surprises.',
   },
   {
     icon: Star,
@@ -431,11 +431,11 @@ export default function HomePage() {
                   <div className="flex items-center gap-3">
                     <Phone size={18} className="flex-shrink-0" style={{ color: '#C17F3E' }} />
                     <a
-                      href="tel:0490770382"
+                      href="sms:0432404881"
                       className="text-sm font-medium hover:underline"
                       style={{ color: '#1A1A1A' }}
                     >
-                      0490 770 382
+                      0432 404 881
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
@@ -482,17 +482,17 @@ export default function HomePage() {
                 Get a free, no-obligation quote from Brisbane Southside&apos;s trusted landscaping specialists.
               </p>
               <p className="text-3xl font-bold text-white mb-10">
-                <a href="tel:0490770382" className="hover:opacity-80 transition-opacity">
-                  📞 0490 770 382
+                <a href="sms:0432404881" className="hover:opacity-80 transition-opacity">
+                  📞 0432 404 881
                 </a>
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="tel:0490770382"
+                  href="sms:0432404881"
                   className="inline-flex items-center px-8 py-4 rounded-full text-base font-medium bg-white transition-all hover:opacity-90 hover:scale-105"
                   style={{ color: '#C17F3E' }}
                 >
-                  Call Sam Now
+                  Text Sam Now
                 </a>
                 <Link
                   href="/contact"

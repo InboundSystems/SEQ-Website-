@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Hedge Trimming Brisbane',
   description:
-    'Expert hedge trimming and shaping across Brisbane Southside. Neat, precise results for all hedge varieties. Privacy screens, box hedges, feature hedges. Free quotes — call 0490 770 382.',
+    'Expert hedge trimming and shaping across Brisbane Southside. Neat, precise results for all hedge varieties. Privacy screens, box hedges, feature hedges. Free quotes — text 0432 404 881.',
 };
 
 const services = [
@@ -24,7 +24,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free Quote', description: 'Call Sam on 0490 770 382. We\'ll assess your hedges and confirm pricing — no surprises.' },
+  { title: 'Free Quote', description: 'Text Sam on 0432 404 881. We\'ll assess your hedges and confirm pricing — no surprises.' },
   { title: 'We Come to You', description: 'Our team arrives fully equipped with professional hedge trimming tools and safety gear.' },
   { title: 'Precise Trimming', description: 'We trim, shape, and clean up your hedges to a precise, professional finish — every time.' },
   { title: 'Ongoing or One-Off', description: 'Set up a regular trimming schedule or book us whenever your hedges need attention.' },
@@ -36,7 +36,7 @@ const reasons = [
   'Precision trimming for all Brisbane hedge varieties',
   'Flexible scheduling — regular contracts or one-off visits',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: 'How much does hedge trimming cost in Brisbane?',
     answer:
-      'Hedge trimming in Brisbane starts from around $80 for a small hedge. Pricing depends on hedge length, height, and density. Call Sam on 0490 770 382 for a free, no-obligation quote.',
+      'Hedge trimming in Brisbane starts from around $80 for a small hedge. Pricing depends on hedge length, height, and density. Text Sam on 0432 404 881 for a free, no-obligation quote.',
   },
 ];
 

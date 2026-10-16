@@ -8,7 +8,7 @@ import { ContactForm } from '@/components/contact/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact SEQ Landscaping and Garden Maintenance — Free Quotes Brisbane',
   description:
-    'Contact SEQ Landscaping & Garden Maintenance for a free quote. Call Sam on 0490 770 382 or send an enquiry. Based in Tarragindi, serving all of Brisbane Southside.',
+    'Contact SEQ Landscaping & Garden Maintenance for a free quote. Text Sam on 0432 404 881 or send an enquiry. Based in Tarragindi, serving all of Brisbane Southside.',
 };
 
 const breadcrumbs = [
@@ -42,7 +42,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg" style={{ color: '#E8C99A' }}>
-            Free quotes — call Sam directly or send an enquiry below.
+            Free quotes — text Sam directly or send an enquiry below.
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                     <Phone size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C17F3E' }} />
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#6B6B6B' }}>Phone</p>
-                      <a href="tel:0490770382" className="text-sm font-semibold hover:underline" style={{ color: '#1C3A2A' }}>0490 770 382</a>
+                      <a href="sms:0432404881" className="text-sm font-semibold hover:underline" style={{ color: '#1C3A2A' }}>0432 404 881</a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -113,7 +113,7 @@ export default function ContactPage() {
               <div style={{ backgroundColor: '#F5F0E8' }} className="py-6 px-6 rounded-2xl">
                 <h3 className="font-bold mb-3" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Service Area</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>
-                  Based in Tarragindi, we service all of Brisbane Southside including Greenslopes, Moorooka, Mount Gravatt, Annerley, Holland Park, Coorparoo, Camp Hill, Sunnybank, Salisbury, Rocklea, and all surrounding suburbs. We also service Logan and Ipswich — call to confirm your area.
+                  Based in Tarragindi, we service all of Brisbane Southside including Greenslopes, Moorooka, Mount Gravatt, Annerley, Holland Park, Coorparoo, Camp Hill, Sunnybank, Salisbury, Rocklea, and all surrounding suburbs. We also service Logan and Ipswich — text Sam to confirm your area.
                 </p>
               </div>
             </div>

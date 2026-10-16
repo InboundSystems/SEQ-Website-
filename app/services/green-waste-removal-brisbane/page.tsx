@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Green Waste Removal Brisbane',
   description:
-    'Fast green waste removal across Brisbane Southside. Garden prunings, branches, lawn clippings and bulk green waste collected and disposed of. Free quotes — call Sam on 0490 770 382.',
+    'Fast green waste removal across Brisbane Southside. Garden prunings, branches, lawn clippings and bulk green waste collected and disposed of. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -24,7 +24,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free Quote', description: 'Call Sam on 0490 770 382. Tell us the volume and type of green waste and we\'ll provide a fast, fair quote.' },
+  { title: 'Free Quote', description: 'Text Sam on 0432 404 881. Tell us the volume and type of green waste and we\'ll provide a fast, fair quote.' },
   { title: 'Scheduled Collection', description: 'We arrange a convenient time to collect your green waste — often same day or next day for smaller loads.' },
   { title: 'Loading & Removal', description: 'Our team loads and removes all green waste efficiently, leaving your property clean and tidy.' },
   { title: 'Responsible Disposal', description: 'All green waste is taken to approved disposal and recycling facilities — composted or mulched where possible.' },
@@ -36,24 +36,24 @@ const reasons = [
   'Same day or next day collection often available',
   'All green waste responsibly disposed of or recycled',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does green waste removal cost in Brisbane?',
     answer:
-      'Green waste removal in Brisbane typically starts from around $100 for a small load. Pricing depends on volume and access. We provide a free quote based on your specific situation — call Sam on 0490 770 382.',
+      'Green waste removal in Brisbane typically starts from around $100 for a small load. Pricing depends on volume and access. We provide a free quote based on your specific situation — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you offer same day green waste removal in Brisbane?',
     answer:
-      'Yes — for smaller loads, same day or next day collection is often available across Brisbane Southside. Call Sam on 0490 770 382 to check availability in your area.',
+      'Yes — for smaller loads, same day or next day collection is often available across Brisbane Southside. Text Sam on 0432 404 881 to check availability in your area.',
   },
   {
     question: 'What counts as green waste?',
     answer:
-      'Green waste includes lawn clippings, garden prunings, hedge trimmings, leaves, branches, weeds, and plant matter. It does NOT include treated timber, soil, rocks, or general household waste. If you\'re unsure, give us a call and we\'ll advise.',
+      'Green waste includes lawn clippings, garden prunings, hedge trimmings, leaves, branches, weeds, and plant matter. It does NOT include treated timber, soil, rocks, or general household waste. If you\'re unsure, send Sam a text and we\'ll advise.',
   },
 ];
 

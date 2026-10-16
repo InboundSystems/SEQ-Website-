@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Tree Trimming Brisbane',
   description:
-    'Professional tree trimming and pruning across Brisbane Southside. Safe, tidy results. Dead branch removal, crown thinning, shape pruning. Free quotes — call Sam on 0490 770 382.',
+    'Professional tree trimming and pruning across Brisbane Southside. Safe, tidy results. Dead branch removal, crown thinning, shape pruning. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -25,7 +25,7 @@ const services = [
 ];
 
 const steps = [
-  { title: 'Free On-Site Assessment', description: 'Call Sam on 0490 770 382. We\'ll visit your property, assess the tree, and provide a clear quote before any work begins.' },
+  { title: 'Free On-Site Assessment', description: 'Text Sam on 0432 404 881. We\'ll visit your property, assess the tree, and provide a clear quote before any work begins.' },
   { title: 'Safety Setup', description: 'Our team arrives with the correct equipment and establishes a safe work zone before starting.' },
   { title: 'Professional Trimming', description: 'We trim, prune, and shape with precision — removing dead wood, improving structure, and enhancing the tree\'s health.' },
   { title: 'Full Clean-Up', description: 'All branches and debris are removed from site, leaving your property completely tidy.' },
@@ -37,14 +37,14 @@ const reasons = [
   'Safe, professional approach to all tree work',
   'Partnered with licensed operators for complex removals',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation on-site quotes — call Sam on 0490 770 382',
+  'Free, no-obligation on-site quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does tree trimming cost in Brisbane?',
     answer:
-      'Tree trimming in Brisbane typically starts from $150 for a small tree. Pricing depends on tree size, access, and scope of work. We provide a free on-site assessment and quote before any work begins — call Sam on 0490 770 382.',
+      'Tree trimming in Brisbane typically starts from $150 for a small tree. Pricing depends on tree size, access, and scope of work. We provide a free on-site assessment and quote before any work begins — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you do stump grinding in Brisbane?',

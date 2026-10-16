@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Garden Design Brisbane',
   description:
-    'Custom garden design for Brisbane homes. Landscape design, garden makeovers, new planting plans & outdoor transformations. Free design consultation — call Sam on 0490 770 382.',
+    'Custom garden design for Brisbane homes. Landscape design, garden makeovers, new planting plans & outdoor transformations. Free design consultation — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -38,7 +38,7 @@ const reasons = [
   'Design and installation by the same team — no handover issues',
   'Plant selections proven to thrive in Brisbane conditions',
   '5-star rated by Brisbane homeowners',
-  'Free design consultation — call Sam on 0490 770 382',
+  'Free design consultation — text Sam on 0432 404 881',
 ];
 
 const faqs = [
@@ -50,7 +50,7 @@ const faqs = [
   {
     question: 'How much does garden design cost in Brisbane?',
     answer:
-      'Basic garden design consultations are included in the cost of installation for most projects. For larger or more complex design projects, we can provide a standalone design service. Call Sam on 0490 770 382 to discuss your specific project.',
+      'Basic garden design consultations are included in the cost of installation for most projects. For larger or more complex design projects, we can provide a standalone design service. Text Sam on 0432 404 881 to discuss your specific project.',
   },
   {
     question: 'What plants do you recommend for Brisbane gardens?',

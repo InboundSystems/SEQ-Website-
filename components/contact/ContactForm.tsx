@@ -43,10 +43,10 @@ export function ContactForm() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        alert('Something went wrong — please call Sam directly on 0490 770 382.');
+        alert('Something went wrong — please text Sam directly on 0432 404 881.');
       }
     } catch {
-      alert('Something went wrong — please call Sam directly on 0490 770 382.');
+      alert('Something went wrong — please text Sam directly on 0432 404 881.');
     } finally {
       setSubmitting(false);
     }
@@ -73,9 +73,9 @@ export function ContactForm() {
           Thanks! We&apos;ll be in touch within 24 hours.
         </h3>
         <p className="text-sm" style={{ color: '#6B6B6B' }}>
-          Or call Sam directly on{' '}
-          <a href="tel:0490770382" className="font-semibold underline" style={{ color: '#1C3A2A' }}>
-            0490 770 382
+          Or text Sam directly on{' '}
+          <a href="sms:0432404881" className="font-semibold underline" style={{ color: '#1C3A2A' }}>
+            0432 404 881
           </a>.
         </p>
       </div>

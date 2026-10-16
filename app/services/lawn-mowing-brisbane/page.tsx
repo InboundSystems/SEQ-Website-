@@ -11,7 +11,7 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Lawn Mowing Brisbane',
   description:
-    'Professional lawn mowing across Brisbane Southside. Weekly, fortnightly & one-off services available. Crisp edges, the perfect cut, every time. Free quotes — call Sam on 0490 770 382.',
+    'Professional lawn mowing across Brisbane Southside. Weekly, fortnightly & one-off services available. Crisp edges, the perfect cut, every time. Free quotes — text Sam on 0432 404 881.',
 };
 
 const services = [
@@ -27,7 +27,7 @@ const steps = [
   {
     title: 'Free Quote',
     description:
-      'Call Sam on 0490 770 382 or submit an enquiry online. We\'ll confirm the price before we start — no surprises.',
+      'Text Sam on 0432 404 881 or submit an enquiry online. We\'ll confirm the price before we start — no surprises.',
   },
   {
     title: 'We Come to You',
@@ -52,14 +52,14 @@ const reasons = [
   'Professional-grade equipment for a superior finish',
   'Flexible scheduling — weekly, fortnightly, monthly or one-off',
   '5-star rated by Brisbane homeowners',
-  'Free, no-obligation quotes — call Sam on 0490 770 382',
+  'Free, no-obligation quotes — text Sam on 0432 404 881',
 ];
 
 const faqs = [
   {
     question: 'How much does lawn mowing cost in Brisbane?',
     answer:
-      'Lawn mowing in Brisbane starts from around $60 for a standard residential lawn. Pricing depends on lawn size, condition, and service frequency. We offer discounted rates for regular contracts. Call Sam on 0490 770 382 for a free, no-obligation quote specific to your property.',
+      'Lawn mowing in Brisbane starts from around $60 for a standard residential lawn. Pricing depends on lawn size, condition, and service frequency. We offer discounted rates for regular contracts. Text Sam on 0432 404 881 for a free, no-obligation quote specific to your property.',
   },
   {
     question: 'Do you offer regular lawn mowing contracts in Brisbane?',
@@ -69,7 +69,7 @@ const faqs = [
   {
     question: 'Do you service my Brisbane suburb for lawn mowing?',
     answer:
-      'We service all Brisbane Southside suburbs and Greater Brisbane including Tarragindi, Greenslopes, Moorooka, Mount Gravatt, Coorparoo, Holland Park, Annerley, Sunnybank, and many more. Call Sam on 0490 770 382 to confirm your suburb.',
+      'We service all Brisbane Southside suburbs and Greater Brisbane including Tarragindi, Greenslopes, Moorooka, Mount Gravatt, Coorparoo, Holland Park, Annerley, Sunnybank, and many more. Text Sam on 0432 404 881 to confirm your suburb.',
   },
 ];
 

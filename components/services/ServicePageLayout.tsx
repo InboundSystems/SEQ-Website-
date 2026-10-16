@@ -40,15 +40,15 @@ function QuoteSidebarCard() {
         Get a Free Quote
       </h3>
       <p className="text-sm text-white/75">
-        Call Sam for a straight answer on price — no surprises, no obligation.
+        Text Sam for a straight answer on price — no surprises, no obligation.
       </p>
       <div className="space-y-3">
         <a
-          href="tel:0490770382"
+          href="sms:0432404881"
           className="flex items-center gap-3 text-sm font-medium text-white hover:opacity-80 transition-opacity"
         >
           <Phone size={16} style={{ color: '#C17F3E' }} />
-          0490 770 382
+          0432 404 881
         </a>
         <a
           href="mailto:samhindmarsh@seqlandscaping.net"
@@ -113,20 +113,20 @@ function CTABanner({ serviceName }: { serviceName: string }) {
           Get a Free {serviceName} Quote in Brisbane
         </h2>
         <p className="text-sm text-white/85 mb-6">
-          Call Sam on 0490 770 382 for a straight answer on price — no obligation, no surprises.
+          Text Sam on 0432 404 881 for a straight answer on price — no obligation, no surprises.
         </p>
         <p className="text-3xl font-bold text-white mb-8">
-          <a href="tel:0490770382" className="hover:opacity-80 transition-opacity">
-            📞 0490 770 382
+          <a href="sms:0432404881" className="hover:opacity-80 transition-opacity">
+            📞 0432 404 881
           </a>
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:0490770382"
+            href="sms:0432404881"
             className="inline-flex items-center px-8 py-3.5 rounded-full text-sm font-medium bg-white transition-all hover:opacity-90"
             style={{ color: '#C17F3E' }}
           >
-            Call Sam Now
+            Text Sam Now
           </a>
           <Link
             href="/contact"
