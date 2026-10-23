@@ -8,7 +8,6 @@ const services = [
   'Garden Clean-Up',
   'Landscaping',
   'Turf Laying',
-  'Retaining Walls',
   'Garden Design',
   'Hedge Trimming',
   'Tree Trimming',

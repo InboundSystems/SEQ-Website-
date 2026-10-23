@@ -22,7 +22,7 @@ const services = [
   'Plant selection for Brisbane\'s subtropical climate',
   'Low-maintenance garden design',
   'Water-wise garden planning',
-  'Integration with retaining walls and hard landscaping',
+  'Integration with paths, edging and hard landscaping',
 ];
 
 const steps = [
@@ -61,7 +61,6 @@ const faqs = [
 
 const relatedServices = [
   { title: 'Landscaping Brisbane', href: '/services/landscaping-brisbane' },
-  { title: 'Retaining Walls Brisbane', href: '/services/retaining-walls-brisbane' },
   { title: 'Turf Laying Brisbane', href: '/services/turf-laying-brisbane' },
 ];
 
@@ -82,10 +81,6 @@ export default function GardenDesignPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Garden Design"
         relatedServices={relatedServices}
-        image={{
-          src: 'https://images.unsplash.com/photo-1597201278257-3687be27d954?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Beautifully designed garden beds and pathways',
-        }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>

@@ -9,7 +9,6 @@ const services = [
   { label: 'Tree Trimming', href: '/services/tree-trimming-brisbane' },
   { label: 'Garden Clean Up', href: '/services/garden-clean-up-brisbane' },
   { label: 'Turf Laying', href: '/services/turf-laying-brisbane' },
-  { label: 'Retaining Walls', href: '/services/retaining-walls-brisbane' },
 ];
 
 const areas = [

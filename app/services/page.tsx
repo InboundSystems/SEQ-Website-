@@ -7,7 +7,6 @@ import {
   Scissors,
   Trash2,
   Grid2X2,
-  Layers,
   Palette,
   Bug,
   TreeDeciduous,
@@ -67,12 +66,6 @@ const allServices = [
     title: 'Turf Laying',
     description: 'Instant turf supply and installation for residential and commercial properties.',
     href: '/services/turf-laying-brisbane',
-  },
-  {
-    icon: Layers,
-    title: 'Retaining Walls',
-    description: 'Structural and decorative retaining wall construction across Brisbane.',
-    href: '/services/landscaping-brisbane',
   },
   {
     icon: Palette,

@@ -4,10 +4,8 @@ import Link from 'next/link';
 import {
   Scissors,
   Sprout,
-  Home,
   TreeDeciduous,
   Leaf,
-  Wrench,
   MapPin,
   Shield,
   Calendar,
@@ -24,6 +22,8 @@ import { Footer } from '@/components/layout/Footer';
 import { LocalBusinessSchema } from '@/components/seo/LocalBusinessSchema';
 import { HeroSection } from '@/components/home/HeroSection';
 import { FadeIn, ScaleIn } from '@/components/home/AnimatedSection';
+import { WorkTile } from '@/components/work/WorkTile';
+import { workItem } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Lawn Mowing & Garden Maintenance Brisbane | SEQ Landscaping and Garden Maintenance',
@@ -38,8 +38,8 @@ const services = [
     description:
       'Regular mowing, edging and lawn care for Brisbane Southside homes and businesses. Consistent results every time.',
     href: '/services/lawn-mowing-brisbane',
-    image: 'https://images.unsplash.com/photo-1458245201577-fc8a130b8829?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Lawn mower on freshly mowed green grass',
+    image: '/images/work/lawn-mowing-backyard-stripes.jpg',
+    imageAlt: 'Backyard lawn freshly mowed with stripes, whipper snipper still on the grass',
   },
   {
     icon: Sprout,
@@ -47,17 +47,8 @@ const services = [
     description:
       'Ongoing weeding, pruning, edging and seasonal garden care on your schedule. We keep it looking its best year-round.',
     href: '/services/garden-maintenance-brisbane',
-    image: 'https://images.unsplash.com/photo-1597868165956-03a6827955b1?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Hands planting a seedling in a garden bed',
-  },
-  {
-    icon: Home,
-    title: 'Landscaping Design',
-    description:
-      'Custom outdoor transformations — from new garden beds to complete landscape installations. Your vision, our expertise.',
-    href: '/services/landscaping-brisbane',
-    image: 'https://images.unsplash.com/photo-1700689807667-82630348b301?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Landscaped garden path with manicured hedges and flower beds',
+    image: '/images/work/hedge-and-garden-front-path.jpg',
+    imageAlt: 'Front path garden bed and creeper wall kept neat',
   },
   {
     icon: Scissors,
@@ -65,8 +56,8 @@ const services = [
     description:
       'Precise hedge shaping and tree pruning for neat, healthy gardens year-round. Professional results guaranteed.',
     href: '/services/hedge-trimming-brisbane',
-    image: 'https://images.unsplash.com/photo-1543309959-4d45288d1629?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Gardener trimming a hedge with a power trimmer',
+    image: '/images/work/hedge-trimming-driveway-screen.jpg',
+    imageAlt: 'Rounded hedge screen beside a driveway',
   },
   {
     icon: TreeDeciduous,
@@ -74,18 +65,30 @@ const services = [
     description:
       'Green waste removal and mulch supply & spread to keep your garden healthy and looking its best.',
     href: '/services/mulching-brisbane',
-    image: 'https://images.unsplash.com/photo-1679993082203-a5f504a6fd1a?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Wheelbarrow of garden waste ready for removal',
+    image: '/images/work/mulching-garden-bed.jpg',
+    imageAlt: 'Fresh mulch laid around lomandras along a fence line',
   },
-  {
-    icon: Wrench,
-    title: 'Handyman Services',
-    description:
-      'Minor repairs, property maintenance and general handyman work across Brisbane Southside. No job too small.',
-    href: '/services/handyman-brisbane',
-    image: 'https://images.unsplash.com/photo-1606676539940-12768ce0e762?auto=format&fit=crop&w=800&q=80',
-    imageAlt: 'Handyman tools — drill, hammer and stud finder',
-  },
+];
+
+// Services without job photos yet — listed as text rather than with stock images
+const otherServices: { title: string; href?: string }[] = [
+  { title: 'Landscaping', href: '/services/landscaping-brisbane' },
+  { title: 'Garden Design', href: '/services/garden-design-brisbane' },
+  { title: 'Turf Laying', href: '/services/turf-laying-brisbane' },
+  { title: 'Garden Clean-Ups', href: '/services/garden-clean-up-brisbane' },
+  { title: 'Weed Removal', href: '/services/weed-removal-brisbane' },
+  { title: 'Green Waste Removal', href: '/services/green-waste-removal-brisbane' },
+  { title: 'Commercial Grounds', href: '/services/commercial-grounds-maintenance' },
+  { title: 'Handyman Work' },
+];
+
+// Homepage feature wall — the strongest hedge and garden jobs
+const featured = workItem('hedge-trimming-tall-screen.jpg');
+const featureGrid = [
+  workItem('hedge-trimming-walkthrough.mp4'),
+  workItem('hedge-and-garden-front-path.jpg'),
+  workItem('hedge-trimming-picket-fence.jpg'),
+  workItem('front-garden-and-lawn.jpg'),
 ];
 
 const trustSignals = [
@@ -197,50 +200,119 @@ export default function HomePage() {
               </p>
             </FadeIn>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {services.map((service, i) => {
                 const Icon = service.icon;
                 return (
-                  <FadeIn key={service.title} delay={i * 0.08}>
-                    <div className="service-card group relative bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-transparent hover:border-l-[#C17F3E] hover:-translate-y-1 hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                      <div className="relative w-full aspect-[16/10] overflow-hidden">
-                        <Image
-                          src={service.image}
-                          alt={service.imageAlt}
-                          fill
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="p-8 flex flex-col flex-1">
-                        <div
-                          className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 -mt-14 relative z-10 shadow-sm"
-                          style={{ backgroundColor: '#FDFAF5' }}
-                        >
-                          <Icon size={22} style={{ color: '#2D5A3D' }} />
+                  <FadeIn key={service.title} delay={i * 0.06}>
+                    <Link
+                      href={service.href}
+                      className="group relative block aspect-[4/3] overflow-hidden rounded-md"
+                    >
+                      <Image
+                        src={service.image}
+                        alt={service.imageAlt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                      <div
+                        className="absolute inset-0"
+                        style={{ background: 'linear-gradient(to top, rgba(20,40,28,0.9) 0%, rgba(20,40,28,0.35) 45%, transparent 70%)' }}
+                      />
+                      <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Icon size={18} style={{ color: '#E8C99A' }} />
+                          <h3
+                            className="text-2xl font-bold text-white"
+                            style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+                          >
+                            {service.title}
+                          </h3>
                         </div>
-                        <h3
-                          className="text-xl font-bold mb-3"
-                          style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
-                        >
-                          {service.title}
-                        </h3>
-                        <p className="text-sm leading-relaxed mb-5 flex-1" style={{ color: '#6B6B6B' }}>
+                        <p className="text-sm leading-relaxed text-white/85 max-w-md mb-3">
                           {service.description}
                         </p>
-                        <Link
-                          href={service.href}
-                          className="text-sm font-medium hover:underline transition-colors"
-                          style={{ color: '#4A8C5C' }}
-                        >
-                          Learn More →
-                        </Link>
+                        <span className="text-sm font-medium group-hover:underline" style={{ color: '#E8C99A' }}>
+                          See the work →
+                        </span>
                       </div>
-                    </div>
+                    </Link>
                   </FadeIn>
                 );
               })}
             </div>
+
+            <FadeIn delay={0.2}>
+              <div className="mt-12 pt-8 border-t border-black/10">
+                <p className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: '#6B6B6B' }}>
+                  We also do
+                </p>
+                <ul className="flex flex-wrap gap-x-6 gap-y-3">
+                  {otherServices.map((s) => (
+                    <li key={s.title} className="text-base" style={{ color: '#1C3A2A' }}>
+                      {s.href ? (
+                        <Link href={s.href} className="underline underline-offset-4 decoration-[#C17F3E]/60 hover:decoration-[#C17F3E]">
+                          {s.title}
+                        </Link>
+                      ) : (
+                        s.title
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Section 3b — Hedge & garden feature wall */}
+        <section className="py-24" style={{ backgroundColor: '#F5F0E8' }}>
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <FadeIn className="mb-10 max-w-2xl">
+              <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C17F3E' }}>
+                Recent work
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl font-bold mb-4"
+                style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
+              >
+                Hedges cut square. Gardens kept tidy.
+              </h2>
+              <p className="text-base" style={{ color: '#6B6B6B' }}>
+                Every photo here is a real job, taken on the day. No stock photos.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.1}>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="col-span-2 lg:row-span-2">
+                  <WorkTile
+                    item={featured}
+                    className="aspect-[4/5] lg:aspect-auto lg:h-full"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+                {featureGrid.map((item) => (
+                  <WorkTile
+                    key={item.src}
+                    item={item}
+                    className="aspect-[4/5]"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                ))}
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.15}>
+              <Link
+                href="/gallery"
+                className="inline-flex items-center mt-8 text-sm font-medium hover:underline"
+                style={{ color: '#1C3A2A' }}
+              >
+                See all our work →
+              </Link>
+            </FadeIn>
           </div>
         </section>
 
@@ -252,8 +324,8 @@ export default function HomePage() {
               <FadeIn direction="left">
                 <div className="relative flex items-center justify-center px-12 py-24 min-h-[400px] overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1597201278257-3687be27d954?auto=format&fit=crop&w=1200&q=80"
-                    alt="Lush, well-maintained garden beds"
+                    src="/images/work/hedge-trimming-backyard-screen.jpg"
+                    alt="Backyard hedge screens trimmed around a lawn"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"

@@ -21,7 +21,6 @@ const services = [
   { name: 'Garden Clean-Up', href: '/services/garden-clean-up-brisbane' },
   { name: 'Landscaping', href: '/services/landscaping-brisbane' },
   { name: 'Turf Laying', href: '/services/turf-laying-brisbane' },
-  { name: 'Retaining Walls', href: '/services/retaining-walls-brisbane' },
   { name: 'Garden Design', href: '/services/garden-design-brisbane' },
   { name: 'Hedge Trimming', href: '/services/hedge-trimming-brisbane' },
   { name: 'Tree Trimming', href: '/services/tree-trimming-brisbane' },

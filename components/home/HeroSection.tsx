@@ -1,20 +1,21 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage:
-          'url(https://images.unsplash.com/photo-1543309959-4d45288d1629?auto=format&fit=crop&w=1920&q=80)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <Image
+        src="/images/work/hedge-trimming-with-trailer.jpg"
+        alt="Long hedge freshly trimmed, with the trailer loaded on the lawn"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
       {/* Dark overlay */}
       <div
         className="absolute inset-0"

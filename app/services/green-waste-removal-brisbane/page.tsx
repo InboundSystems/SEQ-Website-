@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Green Waste Removal Brisbane',
@@ -80,9 +81,10 @@ export default function GreenWasteRemovalPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Green Waste Removal"
         relatedServices={relatedServices}
+        recentWork={workFor('Hedge Trimming', 'Tree Trimming').filter((m) => m.src !== workPhoto('hedge-trimming-with-trailer'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1679993082203-a5f504a6fd1a?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Wheelbarrow of garden waste ready for removal',
+          src: workPhoto('hedge-trimming-with-trailer'),
+          alt: 'Long hedge freshly trimmed, with the trailer loaded on the lawn',
         }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

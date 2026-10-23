@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Weed Removal Brisbane',
@@ -80,9 +81,10 @@ export default function WeedRemovalPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Weed Removal"
         relatedServices={relatedServices}
+        recentWork={workFor('Garden Maintenance', 'Mulching').filter((m) => m.src !== workPhoto('mulching-garden-bed'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1621460249485-4e4f92c9de5d?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Hand weeding a garden bed',
+          src: workPhoto('mulching-garden-bed'),
+          alt: 'Fresh mulch laid around lomandras along a fence line',
         }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

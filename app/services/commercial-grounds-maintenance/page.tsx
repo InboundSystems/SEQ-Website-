@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Commercial Grounds Maintenance Brisbane',
@@ -83,8 +84,8 @@ export default function CommercialGroundsMaintenancePage() {
         ctaServiceName="Commercial Grounds Maintenance"
         relatedServices={relatedServices}
         image={{
-          src: 'https://images.unsplash.com/photo-1750987776992-19c2abd847ee?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Ride-on mower maintaining a large commercial lawn',
+          src: workPhoto('lawn-and-hedge-unit-block'),
+          alt: 'Lawn and hedge kept tidy at a unit block',
         }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

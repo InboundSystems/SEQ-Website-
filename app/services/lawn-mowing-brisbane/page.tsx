@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Lawn Mowing Brisbane',
@@ -102,9 +103,10 @@ export default function LawnMowingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Lawn Mowing"
         relatedServices={relatedServices}
+        recentWork={workFor('Lawn Mowing').filter((m) => m.src !== workPhoto('lawn-mowing-backyard-shed'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1458245201577-fc8a130b8829?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Lawn mower on freshly mowed green grass',
+          src: workPhoto('lawn-mowing-backyard-shed'),
+          alt: 'Mowed backyard lawn with tidy edges along the path',
         }}
       >
         {/* Section 2 — Intro */}

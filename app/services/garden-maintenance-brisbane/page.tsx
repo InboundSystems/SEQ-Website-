@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Garden Maintenance Brisbane',
@@ -104,9 +105,11 @@ export default function GardenMaintenancePage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Garden Maintenance"
         relatedServices={relatedServices}
+        recentWorkLimit={9}
+        recentWork={workFor('Garden Maintenance', 'Mulching', 'Hedge Trimming').filter((m) => m.src !== workPhoto('garden-bed-timber-edging'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1597868165956-03a6827955b1?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Hands planting a seedling in a garden bed',
+          src: workPhoto('garden-bed-timber-edging'),
+          alt: 'Garden bed with new timber edging against gravel',
         }}
       >
         {/* Section 2 — Intro */}

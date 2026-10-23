@@ -42,7 +42,7 @@ export const suburbs: SuburbData[] = [
     description: 'a suburb we service across Brisbane Southside',
     nearbySuburbs: ['Upper Mount Gravatt', 'Wishart', 'Mansfield', 'Coorparoo'],
     localDetails:
-      "Mount Gravatt's elevated position and mix of property styles — from older homes to newer estates — creates varied landscaping needs. The hilly terrain is well suited to terraced gardens and retaining wall installations.",
+      "Mount Gravatt's elevated position and mix of property styles — from older homes to newer estates — creates varied landscaping needs. The hilly terrain is well suited to terraced gardens and tiered planting.",
   },
   {
     slug: 'coorparoo',

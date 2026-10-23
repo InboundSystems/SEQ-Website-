@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, ChevronRight } from 'lucide-react';
+import { WorkTile } from '@/components/work/WorkTile';
+import type { WorkMedia } from '@/data/workMedia';
 
 interface BreadcrumbItem {
   name: string;
@@ -23,7 +25,12 @@ interface ServicePageLayoutProps {
   breadcrumbs: BreadcrumbItem[];
   ctaServiceName: string;
   relatedServices: RelatedService[];
-  image: HeroImage;
+  /** Only pass a real job photo — pages without one get a text-led header */
+  image?: HeroImage;
+  /** Real job photos/clips shown under the page content */
+  recentWork?: WorkMedia[];
+  /** Max tiles in Recent Jobs (rounded down to a full row of 3) */
+  recentWorkLimit?: number;
   children: ReactNode;
 }
 
@@ -102,6 +109,40 @@ function RelatedServicesCard({ services }: { services: RelatedService[] }) {
   );
 }
 
+function RecentWork({ items, limit }: { items: WorkMedia[]; limit: number }) {
+  // Trimmed to a full row of 3 so the grid never ends ragged
+  const shown = items.length > 3 ? items.slice(0, Math.min(limit, items.length - (items.length % 3))) : items;
+  return (
+    <section className="py-10 border-t border-black/8">
+      <h2
+        className="text-2xl sm:text-3xl font-bold mb-2"
+        style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
+      >
+        Recent Jobs
+      </h2>
+      <p className="text-sm mb-6" style={{ color: '#6B6B6B' }}>
+        Straight off Sam&apos;s phone — real Brisbane Southside jobs, no stock photos.
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        {shown.map((item) => (
+          <WorkTile
+            key={item.src}
+            item={item}
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 22vw"
+          />
+        ))}
+      </div>
+      <Link
+        href="/gallery"
+        className="inline-block mt-5 text-sm font-medium hover:underline"
+        style={{ color: '#4A8C5C' }}
+      >
+        See more of our work →
+      </Link>
+    </section>
+  );
+}
+
 function CTABanner({ serviceName }: { serviceName: string }) {
   return (
     <section style={{ backgroundColor: '#C17F3E' }} className="py-16">
@@ -146,6 +187,8 @@ export function ServicePageLayout({
   ctaServiceName,
   relatedServices,
   image,
+  recentWork,
+  recentWorkLimit = 6,
   children,
 }: ServicePageLayoutProps) {
   return (
@@ -154,7 +197,7 @@ export function ServicePageLayout({
       <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
-            <div className="lg:col-span-3">
+            <div className={image ? 'lg:col-span-3' : 'lg:col-span-4'}>
               {/* Breadcrumb */}
               <nav className="flex items-center gap-2 text-xs text-white/50 mb-6 flex-wrap">
                 {breadcrumbs.map((crumb, i) => (
@@ -176,18 +219,45 @@ export function ServicePageLayout({
               >
                 {h1}
               </h1>
+              {!image && (
+                <>
+                  {/* Hand-drawn style underline */}
+                  <svg
+                    viewBox="0 0 220 14"
+                    className="mt-4 w-44 h-3"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 9C40 4 82 3 120 6s62 5 98-1"
+                      stroke="#C17F3E"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  <p className="mt-6 text-base text-white/80 max-w-xl leading-relaxed">
+                    Text Sam on{' '}
+                    <a href="sms:0432404881" className="font-semibold text-white underline underline-offset-4 decoration-[#C17F3E]">
+                      0432 404 881
+                    </a>{' '}
+                    with a few details about the job — he&apos;ll come out, have a look and give you a straight price.
+                  </p>
+                </>
+              )}
             </div>
-            <div className="lg:col-span-2">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover"
-                />
+            {image && (
+              <div className="lg:col-span-2">
+                <div className="relative aspect-[4/3] rounded-md overflow-hidden shadow-lg">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
@@ -196,7 +266,10 @@ export function ServicePageLayout({
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main content */}
-          <main className="lg:col-span-2 space-y-0">{children}</main>
+          <main className="lg:col-span-2 space-y-0">
+            {children}
+            {recentWork && recentWork.length > 0 && <RecentWork items={recentWork} limit={recentWorkLimit} />}
+          </main>
 
           {/* Sticky sidebar */}
           <aside className="hidden lg:block">

@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Garden Mulching Brisbane',
@@ -80,9 +81,10 @@ export default function MulchingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Garden Mulching"
         relatedServices={relatedServices}
+        recentWork={workFor('Mulching', 'Garden Maintenance').filter((m) => m.src !== workPhoto('mulching-garden-bed'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1768783028632-9b1ed438771b?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Fresh mulch spread over a garden bed',
+          src: workPhoto('mulching-garden-bed'),
+          alt: 'Fresh mulch laid around lomandras along a fence line',
         }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

@@ -11,14 +11,13 @@ import { FadeIn } from '@/components/home/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Landscaping Brisbane',
   description:
-    'Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways, retaining walls & outdoor living. Free quotes — text 0432 404 881.',
+    'Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways & outdoor living. Free quotes — text 0432 404 881.',
 };
 
 const services = [
   'Custom garden design and installation',
   'New garden beds and planting',
   'Lawn areas, pathways and outdoor living spaces',
-  'Retaining walls — structural and decorative',
   'Complete outdoor transformations for residential properties',
   'Commercial landscaping — offices, strata, retail precincts',
   'Garden restoration and renovation',
@@ -92,7 +91,7 @@ export default function LandscapingPage() {
     <>
       <ServiceSchema
         name="Landscaping Brisbane"
-        description="Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways, retaining walls and complete outdoor living areas."
+        description="Custom landscaping design and installation across Brisbane Southside. Garden transformations, new garden beds, pathways and complete outdoor living areas."
         url="https://seqlandscaping.base44.app/services/landscaping-brisbane"
         areaServed="Brisbane Southside, Greater Brisbane"
       />
@@ -104,10 +103,6 @@ export default function LandscapingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Landscaping"
         relatedServices={relatedServices}
-        image={{
-          src: 'https://images.unsplash.com/photo-1700689807667-82630348b301?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Landscaped garden path with manicured hedges and flower beds',
-        }}
       >
         {/* Section 2 — Intro */}
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
@@ -139,12 +134,6 @@ export default function LandscapingPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-sm" style={{ color: '#6B6B6B' }}>
-              Looking for retaining walls specifically?{' '}
-              <span style={{ color: '#4A8C5C' }}>
-                Retaining wall services coming soon — contact us to discuss your project.
-              </span>
-            </p>
           </FadeIn>
         </section>
 

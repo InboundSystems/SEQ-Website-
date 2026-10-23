@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Tree Trimming Brisbane',
@@ -81,10 +82,7 @@ export default function TreeTrimmingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Tree Trimming"
         relatedServices={relatedServices}
-        image={{
-          src: 'https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Arborist pruning tree branches',
-        }}
+        recentWork={workFor('Tree Trimming')}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
           <FadeIn>

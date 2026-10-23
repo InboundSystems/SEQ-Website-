@@ -152,7 +152,6 @@ export const blogPosts: BlogPost[] = [
         items: [
           'New garden bed design and installation',
           'Planting schemes',
-          'Retaining walls and earthworks',
           'Turf laying',
           'Pathways and paving',
           'Water features and garden lighting',
@@ -186,7 +185,7 @@ export const blogPosts: BlogPost[] = [
           "Your garden is overgrown, poorly designed, or you've just moved in",
           'You want to change the layout or design of your outdoor space',
           "You're preparing a property for sale and need a significant uplift",
-          'You want to add new features — retaining walls, turf, paths, garden beds',
+          'You want to add new features — turf, paths, garden beds',
         ],
       },
       {

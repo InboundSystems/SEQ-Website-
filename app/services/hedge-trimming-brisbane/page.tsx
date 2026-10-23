@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Hedge Trimming Brisbane',
@@ -80,9 +81,11 @@ export default function HedgeTrimmingPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Hedge Trimming"
         relatedServices={relatedServices}
+        recentWorkLimit={9}
+        recentWork={workFor('Hedge Trimming').filter((m) => m.src !== workPhoto('hedge-trimming-backyard-screen'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1543309959-4d45288d1629?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Gardener trimming a hedge with a power trimmer',
+          src: workPhoto('hedge-trimming-backyard-screen'),
+          alt: 'Backyard hedge screens trimmed around a lawn',
         }}
       >
         <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">

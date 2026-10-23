@@ -1,29 +1,24 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
-
-export interface GalleryImage {
-  src: string;
-  alt: string;
-  category: string;
-}
+import { WorkTile } from '@/components/work/WorkTile';
+import type { WorkCategory, WorkMedia } from '@/data/workMedia';
 
 interface GalleryClientProps {
-  images: GalleryImage[];
-  categories: string[];
+  items: WorkMedia[];
+  categories: WorkCategory[];
 }
 
-export function GalleryClient({ images, categories }: GalleryClientProps) {
-  const [active, setActive] = useState('All');
+export function GalleryClient({ items, categories }: GalleryClientProps) {
+  const [active, setActive] = useState<'All' | WorkCategory>('All');
 
-  const filtered = active === 'All' ? images : images.filter((img) => img.category === active);
+  const filtered = active === 'All' ? items : items.filter((item) => item.category === active);
 
   return (
     <div>
       {/* Filter buttons */}
       <div className="flex flex-wrap gap-3 mb-8">
-        {['All', ...categories].map((cat) => (
+        {(['All', ...categories] as const).map((cat) => (
           <button
             key={cat}
             onClick={() => setActive(cat)}
@@ -39,23 +34,15 @@ export function GalleryClient({ images, categories }: GalleryClientProps) {
         ))}
       </div>
 
-      {/* Image grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {filtered.map((img, i) => (
-          <div key={`${img.src}-${i}`} className="rounded-2xl overflow-hidden aspect-[4/3] relative group">
-            <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+      {/* Photo wall — mixed portrait/landscape in columns */}
+      <div className="columns-2 lg:columns-3 gap-3">
+        {filtered.map((item) => (
+          <div key={item.src} className="mb-3 break-inside-avoid">
+            <WorkTile
+              item={item}
+              className={item.orientation === 'portrait' ? 'aspect-[3/4]' : 'aspect-[4/3]'}
+              sizes="(max-width: 1024px) 50vw, 33vw"
             />
-            <div
-              className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              style={{ background: 'linear-gradient(to top, rgba(28,58,42,0.85) 0%, transparent 60%)' }}
-            >
-              <span className="text-white text-sm font-medium">{img.alt}</span>
-            </div>
           </div>
         ))}
       </div>

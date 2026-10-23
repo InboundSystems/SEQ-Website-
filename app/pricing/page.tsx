@@ -47,8 +47,6 @@ const pricingData = [
     category: 'Landscaping & Construction',
     items: [
       { service: 'Turf laying (supply + install, per m²)', price: '$25–$45/m²' },
-      { service: 'Retaining wall — timber sleeper (per lin. m)', price: '$200–$320/lm' },
-      { service: 'Retaining wall — concrete block (per lin. m)', price: '$300–$450/lm' },
       { service: 'Mulch supply and spreading', price: '$80–$200' },
     ],
   },

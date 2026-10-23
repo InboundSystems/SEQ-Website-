@@ -7,6 +7,7 @@ import { ServiceSchema } from '@/components/seo/ServiceSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { FadeIn } from '@/components/home/AnimatedSection';
+import { workFor, workPhoto } from '@/data/workMedia';
 
 export const metadata: Metadata = {
   title: 'Garden Clean Up Brisbane',
@@ -128,9 +129,10 @@ export default function GardenCleanUpPage() {
         breadcrumbs={breadcrumbs}
         ctaServiceName="Garden Clean Up"
         relatedServices={relatedServices}
+        recentWork={workFor('Garden Maintenance', 'Hedge Trimming').filter((m) => m.src !== workPhoto('hedge-trimming-side-path'))}
         image={{
-          src: 'https://images.unsplash.com/photo-1780866701868-ddf82ea1f67e?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Overgrown yard before a garden clean-up',
+          src: workPhoto('hedge-trimming-side-path'),
+          alt: 'Low hedge trimmed along a brick path, clippings mid clean-up',
         }}
       >
         {/* Section 2 — Intro */}
