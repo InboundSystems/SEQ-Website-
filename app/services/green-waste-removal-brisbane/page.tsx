@@ -44,7 +44,7 @@ const faqs = [
   {
     question: 'How much does green waste removal cost in Brisbane?',
     answer:
-      'Green waste removal in Brisbane typically starts from around $100 for a small load. Pricing depends on volume and access. We provide a free quote based on your specific situation — text Sam on 0432 404 881.',
+      'Green waste removal pricing depends on volume and access, so every job is quoted individually. We provide a free quote based on your specific situation — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you offer same day green waste removal in Brisbane?',
@@ -87,7 +87,7 @@ export default function GreenWasteRemovalPage() {
           alt: 'Long hedge freshly trimmed, with the trailer loaded on the lawn',
         }}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides fast, reliable green waste removal services across Brisbane Southside. Whether you&apos;ve just completed a garden clean-up, tree trimming, or hedge job — or simply have an accumulation of clippings and prunings — our green waste removal Brisbane team will collect and responsibly dispose of it all, often same day or next day.
@@ -107,7 +107,7 @@ export default function GreenWasteRemovalPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Green Waste Removal Process Works</h2>
             <ol className="space-y-6">

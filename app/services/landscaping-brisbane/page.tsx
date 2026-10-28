@@ -60,7 +60,7 @@ const faqs = [
   {
     question: 'How much does landscaping cost in Brisbane?',
     answer:
-      'Landscaping costs in Brisbane vary widely based on scope — from $500 for a simple garden bed installation to $10,000+ for a complete outdoor transformation. We provide free, itemised quotes so you know exactly what\'s included. Text Sam on 0432 404 881.',
+      'Landscaping costs vary widely based on scope — from a simple garden bed installation to a complete outdoor transformation. We provide free, itemised quotes so you know exactly what\'s included. Text Sam on 0432 404 881.',
   },
   {
     question: 'Do you offer landscaping design as well as installation?',
@@ -105,7 +105,7 @@ export default function LandscapingPage() {
         relatedServices={relatedServices}
       >
         {/* Section 2 — Intro */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance delivers custom landscaping design and
@@ -138,7 +138,7 @@ export default function LandscapingPage() {
         </section>
 
         {/* Section 4 — Process */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-8"

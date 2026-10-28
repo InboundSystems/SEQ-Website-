@@ -79,7 +79,7 @@ const faqs = [
   {
     question: 'How much does turf laying cost in Brisbane?',
     answer:
-      'Turf laying in Brisbane typically costs $15–$25 per square metre, including supply and installation. The total cost depends on area size, turf variety chosen, and site preparation required. Text Sam on 0432 404 881 for a free, no-obligation quote for your property.',
+      'Every turf job is quoted individually, including supply and installation. The total cost depends on area size, turf variety chosen, and site preparation required. Text Sam on 0432 404 881 for a free, no-obligation quote for your property.',
   },
   {
     question: "What's the best time of year to lay turf in Brisbane?",
@@ -124,7 +124,7 @@ export default function TurfLayingPage() {
         relatedServices={relatedServices}
       >
         {/* Section 2 — Intro */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               Looking for professional turf laying in Brisbane? SEQ Landscaping &amp; Garden
@@ -157,7 +157,7 @@ export default function TurfLayingPage() {
         </section>
 
         {/* Section 3b — Turf Varieties (extra for this page) */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"
@@ -217,7 +217,7 @@ export default function TurfLayingPage() {
         </section>
 
         {/* Section 5 — Why Choose SEQ */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"
@@ -240,7 +240,7 @@ export default function TurfLayingPage() {
         <ServiceAreaSection serviceName="Turf Laying" bgColor="#FDFAF5" />
 
         {/* Section 7 — FAQ */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"

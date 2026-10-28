@@ -54,7 +54,7 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div
-        className="py-12 px-8 rounded-2xl text-center"
+        className="py-12 px-5 sm:px-8 rounded-2xl text-center"
         style={{ backgroundColor: '#F5F0E8' }}
       >
         <div

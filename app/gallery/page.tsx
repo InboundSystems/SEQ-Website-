@@ -23,7 +23,7 @@ export default function GalleryPage() {
       <BreadcrumbSchema items={breadcrumbs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-5xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -55,7 +55,7 @@ export default function GalleryPage() {
 
         {/* CTA */}
         <FadeIn>
-          <section style={{ backgroundColor: '#C17F3E' }} className="py-10 px-8 rounded-2xl text-center mt-14">
+          <section style={{ backgroundColor: '#C17F3E' }} className="py-10 px-5 sm:px-8 rounded-2xl text-center mt-14">
             <h2 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Like What You See?</h2>
             <p className="text-white mb-6 text-sm">Get a free quote for your garden — text Sam on 0432 404 881.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

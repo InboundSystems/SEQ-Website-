@@ -54,7 +54,7 @@ const faqs = [
   {
     question: 'How much does weed removal cost in Brisbane?',
     answer:
-      'Weed removal pricing depends on garden size and weed density. A typical residential garden weeding service starts from around $80. For heavily overgrown areas, a one-off clean-up followed by a maintenance contract is often the most cost-effective approach. Text Sam for a free quote.',
+      'Weed removal pricing depends on garden size and weed density, so every job is quoted individually. For heavily overgrown areas, a one-off clean-up followed by a maintenance contract is often the most cost-effective approach. Text Sam for a free quote.',
   },
 ];
 
@@ -87,7 +87,7 @@ export default function WeedRemovalPage() {
           alt: 'Fresh mulch laid around lomandras along a fence line',
         }}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional weed removal services across Brisbane Southside and Greater Brisbane. Brisbane&apos;s subtropical climate creates year-round weed pressure — our weed removal Brisbane team offers both manual removal and targeted treatment to keep your garden beds and lawns weed-free, clean, and healthy.
@@ -107,7 +107,7 @@ export default function WeedRemovalPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Weed Removal Process Works</h2>
             <ol className="space-y-6">

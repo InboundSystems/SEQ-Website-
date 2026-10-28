@@ -11,7 +11,7 @@ module.exports = {
     // Service pages
     if (path.startsWith('/services/')) return { loc: path, changefreq: 'weekly', priority: 0.9 };
     // Other core pages
-    if (['/services', '/pricing', '/about', '/contact', '/gallery', '/blog'].includes(path)) {
+    if (['/services','/about', '/contact', '/gallery', '/blog'].includes(path)) {
       return { loc: path, changefreq: 'monthly', priority: 0.6 };
     }
     return { loc: path, changefreq: config.changefreq, priority: config.priority };

@@ -113,7 +113,7 @@ export default function GardenMaintenancePage() {
         }}
       >
         {/* Section 2 — Intro */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides reliable, professional garden
@@ -145,7 +145,7 @@ export default function GardenMaintenancePage() {
         </section>
 
         {/* Section 4 — Process */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-8"

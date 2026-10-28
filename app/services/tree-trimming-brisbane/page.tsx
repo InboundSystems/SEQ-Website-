@@ -45,7 +45,7 @@ const faqs = [
   {
     question: 'How much does tree trimming cost in Brisbane?',
     answer:
-      'Tree trimming in Brisbane typically starts from $150 for a small tree. Pricing depends on tree size, access, and scope of work. We provide a free on-site assessment and quote before any work begins — text Sam on 0432 404 881.',
+      'Every tree trimming job is quoted individually. Pricing depends on tree size, access, and scope of work. We provide a free on-site assessment and quote before any work begins — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you do stump grinding in Brisbane?',
@@ -84,7 +84,7 @@ export default function TreeTrimmingPage() {
         relatedServices={relatedServices}
         recentWork={workFor('Tree Trimming')}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional tree trimming and pruning services across Brisbane Southside. Based in Tarragindi, our tree trimming Brisbane team handles everything from palm frond removal and dead branch clearing to crown thinning and fruit tree pruning — safely and efficiently, with full clean-up included.
@@ -104,7 +104,7 @@ export default function TreeTrimmingPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Tree Trimming Process Works</h2>
             <ol className="space-y-6">

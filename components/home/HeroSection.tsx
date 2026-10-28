@@ -7,7 +7,7 @@ import { ChevronDown } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
       <Image
         src="/images/work/hedge-trimming-with-trailer.jpg"
         alt="Long hedge freshly trimmed, with the trailer loaded on the lawn"
@@ -25,7 +25,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
         <motion.h1
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+          className="text-[2.5rem] min-[375px]:text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

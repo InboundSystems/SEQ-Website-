@@ -22,7 +22,7 @@ export default function ContactPage() {
       <BreadcrumbSchema items={breadcrumbs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-5xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -54,26 +54,26 @@ export default function ContactPage() {
           <div className="space-y-8">
             <FadeIn>
               {/* Contact details */}
-              <section style={{ backgroundColor: '#F5F0E8' }} className="py-8 px-8 rounded-2xl">
+              <section style={{ backgroundColor: '#F5F0E8' }} className="py-8 px-5 sm:px-8 rounded-2xl">
                 <h2 className="text-xl font-bold mb-5" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Get in Touch</h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Phone size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C17F3E' }} />
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#6B6B6B' }}>Phone</p>
                       <a href="sms:0432404881" className="text-sm font-semibold hover:underline" style={{ color: '#1C3A2A' }}>0432 404 881</a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Mail size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C17F3E' }} />
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#6B6B6B' }}>Email</p>
-                      <a href="mailto:samhindmarsh@seqlandscaping.net" className="text-sm font-semibold hover:underline" style={{ color: '#1C3A2A' }}>samhindmarsh@seqlandscaping.net</a>
+                      <a href="mailto:samhindmarsh@seqlandscaping.net" className="text-sm font-semibold hover:underline break-all" style={{ color: '#1C3A2A' }}>samhindmarsh@seqlandscaping.net</a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <MapPin size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C17F3E' }} />
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#6B6B6B' }}>Based In</p>
                       <p className="text-sm" style={{ color: '#1A1A1A' }}>48 Downes St, Tarragindi QLD 4105</p>
                       <p className="text-xs mt-0.5" style={{ color: '#6B6B6B' }}>Serving all of Brisbane Southside & Greater Brisbane</p>
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Clock size={18} className="mt-0.5 flex-shrink-0" style={{ color: '#C17F3E' }} />
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#6B6B6B' }}>Hours</p>
                       <p className="text-sm" style={{ color: '#1A1A1A' }}>Monday – Saturday, 7am – 5pm</p>
                     </div>

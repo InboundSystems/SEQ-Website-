@@ -54,7 +54,7 @@ const faqs = [
   {
     question: 'How much does hedge trimming cost in Brisbane?',
     answer:
-      'Hedge trimming in Brisbane starts from around $80 for a small hedge. Pricing depends on hedge length, height, and density. Text Sam on 0432 404 881 for a free, no-obligation quote.',
+      'Hedge trimming pricing depends on hedge length, height, and density, so every job is quoted individually. Text Sam on 0432 404 881 for a free, no-obligation quote.',
   },
 ];
 
@@ -88,7 +88,7 @@ export default function HedgeTrimmingPage() {
           alt: 'Backyard hedge screens trimmed around a lawn',
         }}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides expert hedge trimming services across Brisbane Southside and Greater Brisbane. Based in Tarragindi, our hedge trimming Brisbane team delivers neat, precise results for all hedge varieties — from privacy screens and Lilly Pilly to box hedges and sculpted feature hedges. Regular contracts available.
@@ -108,7 +108,7 @@ export default function HedgeTrimmingPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Hedge Trimming Process Works</h2>
             <ol className="space-y-6">

@@ -32,7 +32,11 @@ export function ServiceAreaSection({
   const suburbs = [...DEFAULT_SUBURBS, ...extraSuburbs];
 
   return (
-    <section className="py-16" style={{ backgroundColor: bgColor }}>
+    <section
+      // Only inset the content when the section is a visible card against the page background
+      className={bgColor === '#FDFAF5' ? 'py-16' : 'py-16 px-5 sm:px-8 rounded-2xl'}
+      style={{ backgroundColor: bgColor }}
+    >
       <div className="space-y-6">
         <FadeIn>
           <h2

@@ -60,7 +60,7 @@ const faqs = [
   {
     question: 'How much does lawn mowing cost in Brisbane?',
     answer:
-      'Lawn mowing in Brisbane starts from around $60 for a standard residential lawn. Pricing depends on lawn size, condition, and service frequency. We offer discounted rates for regular contracts. Text Sam on 0432 404 881 for a free, no-obligation quote specific to your property.',
+      'Every lawn is quoted individually. Pricing depends on lawn size, condition, and service frequency. We offer discounted rates for regular contracts. Text Sam on 0432 404 881 for a free, no-obligation quote specific to your property.',
   },
   {
     question: 'Do you offer regular lawn mowing contracts in Brisbane?',
@@ -110,7 +110,7 @@ export default function LawnMowingPage() {
         }}
       >
         {/* Section 2 — Intro */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 -mx-6 px-6 lg:-mx-0 lg:px-0 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional lawn mowing services
@@ -142,7 +142,7 @@ export default function LawnMowingPage() {
         </section>
 
         {/* Section 4 — Process */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-8"

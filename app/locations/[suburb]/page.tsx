@@ -58,7 +58,7 @@ export default async function SuburbPage({
     },
     {
       question: `How much does lawn mowing cost in ${suburb.name}?`,
-      answer: `Lawn mowing prices start from $60 for a standard residential lawn in ${suburb.name}. Text Sam on 0432 404 881 for a free, no-obligation quote based on your property size.`,
+      answer: `Every lawn in ${suburb.name} is different, so we quote each job individually based on size, condition and access. Text Sam on 0432 404 881 for a free, no-obligation quote.`,
     },
     {
       question: `Do you offer regular garden maintenance contracts in ${suburb.name}?`,
@@ -72,7 +72,7 @@ export default async function SuburbPage({
       <FAQSchema faqs={faqs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -106,7 +106,7 @@ export default async function SuburbPage({
 
         {/* Intro */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional landscaping and garden maintenance throughout {suburb.name} and surrounding areas. Based in nearby Tarragindi, our team services {suburb.name} {suburb.postcode} regularly — offering fast response times and local knowledge that out-of-area operators simply can&apos;t match. {suburb.localDetails}
             </p>
@@ -134,7 +134,7 @@ export default async function SuburbPage({
 
         {/* Garden Maintenance */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <h2
               className="text-2xl font-bold mb-4"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
@@ -146,7 +146,7 @@ export default async function SuburbPage({
               <Link href="/services/garden-maintenance-brisbane" style={{ color: '#2D5A3D' }} className="underline">
                 garden maintenance
               </Link>{' '}
-              in {suburb.name} including weeding, pruning, edging, fertilising, and seasonal clean-ups. Regular contracts available — we&apos;ll keep your garden looking its best year-round.
+              in {suburb.name}{' '}including weeding, pruning, edging, fertilising, and seasonal clean-ups. Regular contracts available — we&apos;ll keep your garden looking its best year-round.
             </p>
           </section>
         </FadeIn>
@@ -172,7 +172,7 @@ export default async function SuburbPage({
 
         {/* Why choose */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <h2
               className="text-2xl font-bold mb-6"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
@@ -223,7 +223,7 @@ export default async function SuburbPage({
 
         {/* Nearby suburbs */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <h2
               className="text-2xl font-bold mb-5"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}
@@ -255,7 +255,7 @@ export default async function SuburbPage({
 
         {/* CTA */}
         <FadeIn>
-          <section style={{ backgroundColor: '#C17F3E' }} className="py-10 px-8 rounded-2xl text-center">
+          <section style={{ backgroundColor: '#C17F3E' }} className="py-10 px-5 sm:px-8 rounded-2xl text-center">
             <h2
               className="text-2xl font-bold text-white mb-3"
               style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
@@ -271,7 +271,7 @@ export default async function SuburbPage({
             </p>
             <p className="text-white mb-6 text-sm">
               Email:{' '}
-              <a href="mailto:samhindmarsh@seqlandscaping.net" className="underline">
+              <a href="mailto:samhindmarsh@seqlandscaping.net" className="underline break-all">
                 samhindmarsh@seqlandscaping.net
               </a>
             </p>

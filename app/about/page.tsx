@@ -50,7 +50,7 @@ export default function AboutPage() {
       <BreadcrumbSchema items={breadcrumbs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -79,7 +79,7 @@ export default function AboutPage() {
 
         {/* Local specialists intro */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-5" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Brisbane Southside Local Specialists</h2>
             <div className="space-y-4 text-sm leading-relaxed" style={{ color: '#1A1A1A' }}>
               <p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
 
         {/* Services at a glance */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-6" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Our Services</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {services.map((service) => (
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
         {/* CTA */}
         <FadeIn>
-          <section style={{ backgroundColor: '#1C3A2A' }} className="py-10 px-8 rounded-2xl text-center">
+          <section style={{ backgroundColor: '#1C3A2A' }} className="py-10 px-5 sm:px-8 rounded-2xl text-center">
             <h2 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Ready to Get Started?</h2>
             <p className="mb-6 text-sm" style={{ color: '#E8C99A' }}>Text Sam directly for a free, no-obligation quote.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

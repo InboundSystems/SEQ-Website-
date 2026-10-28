@@ -86,7 +86,7 @@ const faqs = [
   {
     question: 'How much does a garden clean up cost in Brisbane?',
     answer:
-      'Garden clean-up costs in Brisbane vary based on garden size and the amount of overgrowth. A standard residential clean-up typically ranges from $200–$600. Large or heavily overgrown gardens may be more. We provide a free, no-obligation quote before any work begins — text Sam on 0432 404 881.',
+      'Garden clean-up costs vary based on garden size and the amount of overgrowth, so every job is quoted individually. We provide a free, no-obligation quote before any work begins — text Sam on 0432 404 881.',
   },
   {
     question: 'Do you remove all garden waste after a clean up?',
@@ -136,7 +136,7 @@ export default function GardenCleanUpPage() {
         }}
       >
         {/* Section 2 — Intro */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               Need a garden clean up in Brisbane? SEQ Landscaping &amp; Garden Maintenance
@@ -169,7 +169,7 @@ export default function GardenCleanUpPage() {
         </section>
 
         {/* Section 3b — Situations (extra for critical gap page) */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"
@@ -228,7 +228,7 @@ export default function GardenCleanUpPage() {
         </section>
 
         {/* Section 5 — Why Choose SEQ */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"
@@ -251,7 +251,7 @@ export default function GardenCleanUpPage() {
         <ServiceAreaSection serviceName="Garden Clean Up" bgColor="#FDFAF5" />
 
         {/* Section 7 — FAQ */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2
               className="text-2xl sm:text-3xl font-bold mb-6"

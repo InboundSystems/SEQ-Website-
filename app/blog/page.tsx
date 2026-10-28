@@ -21,7 +21,7 @@ export default function BlogIndexPage() {
       <BreadcrumbSchema items={breadcrumbs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -90,7 +90,7 @@ export default function BlogIndexPage() {
 
         {/* CTA */}
         <FadeIn>
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl text-center mt-14">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl text-center mt-14">
             <h2
               className="text-2xl font-bold mb-3"
               style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}

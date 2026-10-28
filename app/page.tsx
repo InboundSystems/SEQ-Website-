@@ -17,8 +17,6 @@ import {
   Mail,
   Clock,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { LocalBusinessSchema } from '@/components/seo/LocalBusinessSchema';
 import { HeroSection } from '@/components/home/HeroSection';
 import { FadeIn, ScaleIn } from '@/components/home/AnimatedSection';
@@ -161,7 +159,6 @@ export default function HomePage() {
   return (
     <>
       <LocalBusinessSchema />
-      <Navbar />
       <main>
         {/* Section 1 — Hero */}
         <HeroSection />
@@ -207,7 +204,7 @@ export default function HomePage() {
                   <FadeIn key={service.title} delay={i * 0.06}>
                     <Link
                       href={service.href}
-                      className="group relative block aspect-[4/3] overflow-hidden rounded-md"
+                      className="group relative block aspect-square sm:aspect-[4/3] overflow-hidden rounded-md"
                     >
                       <Image
                         src={service.image}
@@ -218,11 +215,11 @@ export default function HomePage() {
                       />
                       <div
                         className="absolute inset-0"
-                        style={{ background: 'linear-gradient(to top, rgba(20,40,28,0.9) 0%, rgba(20,40,28,0.35) 45%, transparent 70%)' }}
+                        style={{ background: 'linear-gradient(to top, rgba(20,40,28,0.92) 0%, rgba(20,40,28,0.6) 50%, transparent 85%)' }}
                       />
                       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                         <div className="flex items-center gap-2 mb-2">
-                          <Icon size={18} style={{ color: '#E8C99A' }} />
+                          <Icon size={18} className="flex-shrink-0" style={{ color: '#E8C99A' }} />
                           <h3
                             className="text-2xl font-bold text-white"
                             style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
@@ -322,7 +319,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Left — image with dark overlay */}
               <FadeIn direction="left">
-                <div className="relative flex items-center justify-center px-12 py-24 min-h-[400px] overflow-hidden">
+                <div className="relative flex items-center justify-center px-6 sm:px-12 py-24 min-h-[400px] overflow-hidden">
                   <Image
                     src="/images/work/hedge-trimming-backyard-screen.jpg"
                     alt="Backyard hedge screens trimmed around a lawn"
@@ -342,7 +339,7 @@ export default function HomePage() {
 
               {/* Right — cream */}
               <FadeIn direction="right">
-                <div className="px-10 py-16" style={{ backgroundColor: '#F5F0E8' }}>
+                <div className="px-6 sm:px-10 py-16" style={{ backgroundColor: '#F5F0E8' }}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     {reasons.map((reason) => {
                       const Icon = reason.icon;
@@ -484,7 +481,7 @@ export default function HomePage() {
 
               {/* Contact card */}
               <div
-                className="rounded-2xl p-10 space-y-6"
+                className="rounded-2xl p-6 sm:p-10 space-y-6"
                 style={{ backgroundColor: '#F5F0E8' }}
               >
                 <h3
@@ -572,18 +569,11 @@ export default function HomePage() {
                 >
                   Send Us a Message
                 </Link>
-                <Link
-                  href="/pricing"
-                  className="inline-flex items-center px-8 py-4 rounded-full text-base font-medium text-white border-2 border-white/70 hover:bg-white/10 transition-all"
-                >
-                  View Pricing Guide
-                </Link>
               </div>
             </div>
           </section>
         </ScaleIn>
       </main>
-      <Footer />
     </>
   );
 }

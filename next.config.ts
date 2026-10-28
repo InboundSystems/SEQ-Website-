@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         destination: '/services/landscaping-brisbane',
         permanent: true,
       },
+      // Pricing guide removed — every job is quoted individually
+      {
+        source: '/pricing',
+        destination: '/contact',
+        permanent: true,
+      },
     ];
   },
   images: {

@@ -82,7 +82,7 @@ export default function GardenDesignPage() {
         ctaServiceName="Garden Design"
         relatedServices={relatedServices}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance offers custom garden design services across Brisbane Southside and Greater Brisbane. From front garden redesigns and backyard transformations to complete landscape plans — our garden design Brisbane team creates beautiful, functional outdoor spaces tailored to your vision and Brisbane&apos;s subtropical climate. Free design consultations available.
@@ -102,7 +102,7 @@ export default function GardenDesignPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Garden Design Process Works</h2>
             <ol className="space-y-6">

@@ -44,7 +44,7 @@ const faqs = [
   {
     question: 'How much does mulching cost in Brisbane?',
     answer:
-      'Mulching in Brisbane typically costs $80–$200 for a standard residential garden, including supply and spreading. Larger areas are priced per cubic metre. Text Sam on 0432 404 881 for a free quote based on your garden size.',
+      'Mulching pricing depends on the size of your garden beds and the type of mulch, so every job is quoted individually, including supply and spreading. Text Sam on 0432 404 881 for a free quote based on your garden size.',
   },
   {
     question: 'What type of mulch is best for Brisbane gardens?',
@@ -87,7 +87,7 @@ export default function MulchingPage() {
           alt: 'Fresh mulch laid around lomandras along a fence line',
         }}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional garden mulching services across Brisbane Southside. In Brisbane&apos;s climate, mulching is one of the most valuable garden investments you can make — retaining soil moisture during dry spells, reducing watering frequency, suppressing weed growth, and keeping soil temperatures stable during summer. Our garden mulching Brisbane team supplies and spreads quality mulch to a professional standard.
@@ -107,7 +107,7 @@ export default function MulchingPage() {
             </ul>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-8" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>How Our Mulching Process Works</h2>
             <ol className="space-y-6">

@@ -88,7 +88,7 @@ export default function CommercialGroundsMaintenancePage() {
           alt: 'Lawn and hedge kept tidy at a unit block',
         }}
       >
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl mb-2">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl mb-2">
           <FadeIn>
             <p className="text-base leading-relaxed" style={{ color: '#1A1A1A' }}>
               SEQ Landscaping &amp; Garden Maintenance provides professional commercial grounds maintenance services across Brisbane Southside and Greater Brisbane. From strata complexes and body corporate sites to office parks, retail centres, and industrial properties — our commercial grounds maintenance Brisbane team delivers reliable, consistent upkeep that keeps your property looking its best year-round. Direct service from Sam, not a call centre.
@@ -110,7 +110,7 @@ export default function CommercialGroundsMaintenancePage() {
         </section>
 
         {/* Extra section — commercial reliability */}
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Consistency You Can Count On</h2>
             <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>
@@ -135,7 +135,7 @@ export default function CommercialGroundsMaintenancePage() {
             </ol>
           </FadeIn>
         </section>
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-6" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Why Brisbane Businesses Choose SEQ Landscaping and Garden Maintenance</h2>
             <ul className="space-y-3">
@@ -149,7 +149,7 @@ export default function CommercialGroundsMaintenancePage() {
           </FadeIn>
         </section>
         <ServiceAreaSection serviceName="Commercial Grounds Maintenance" bgColor="#FDFAF5" />
-        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-8 rounded-2xl">
+        <section style={{ backgroundColor: '#F5F0E8' }} className="py-10 px-5 sm:px-8 rounded-2xl">
           <FadeIn>
             <h2 className="text-2xl sm:text-3xl font-bold mb-6" style={{ color: '#1C3A2A', fontFamily: 'var(--font-playfair), Georgia, serif' }}>Frequently Asked Questions — Commercial Grounds Maintenance Brisbane</h2>
             <FAQAccordion faqs={faqs} />

@@ -90,7 +90,7 @@ export default async function BlogPostPage({
       <BreadcrumbSchema items={breadcrumbs} />
 
       {/* Hero */}
-      <section style={{ backgroundColor: '#1C3A2A' }} className="py-16 px-6">
+      <section style={{ backgroundColor: '#1C3A2A' }} className="pt-32 pb-16 px-6">
         <div className="max-w-3xl mx-auto">
           <nav className="mb-6 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -107,7 +107,7 @@ export default async function BlogPostPage({
               </li>
             </ol>
           </nav>
-          <div className="flex items-center gap-3 mb-5">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5">
             <span className="text-sm" style={{ color: '#E8C99A' }}>By Sam — SEQ Landscaping and Garden Maintenance</span>
             <span style={{ color: '#4A8C5C' }}>·</span>
             <span className="text-sm" style={{ color: '#E8C99A' }}>{post.date}</span>
@@ -131,7 +131,7 @@ export default async function BlogPostPage({
           </article>
 
           {/* Suburb links */}
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-6 px-8 rounded-2xl mb-8">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-6 px-5 sm:px-8 rounded-2xl mb-8">
             <p className="text-sm font-semibold mb-3" style={{ color: '#1C3A2A' }}>
               We service Brisbane Southside including:
             </p>
@@ -159,7 +159,7 @@ export default async function BlogPostPage({
           </section>
 
           {/* Bottom CTA */}
-          <section style={{ backgroundColor: '#F5F0E8' }} className="py-8 px-8 rounded-2xl mb-12 text-center">
+          <section style={{ backgroundColor: '#F5F0E8' }} className="py-8 px-5 sm:px-8 rounded-2xl mb-12 text-center">
             <p className="font-semibold mb-3" style={{ color: '#1C3A2A' }}>
               Need help with your Brisbane garden?
             </p>
